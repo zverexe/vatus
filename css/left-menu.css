@@ -7,7 +7,8 @@
   height: 100%;
   background-color: #263238;
   color: #a0a0a0;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-y: auto; }
   .left-menu .collapse-menu, #mobile-menu .collapse-menu {
     background-color: #1e292f; }
   .left-menu .brand, #mobile-menu .brand {

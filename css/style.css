@@ -48,7 +48,8 @@ ul {
 .breadcrumb {
   background-color: inherit;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-left: 0; }
 
 .panel-body {
   padding: 0; }
@@ -252,7 +253,8 @@ input[type=checkbox], input[type=radio] {
   height: 100%;
   background-color: #263238;
   color: #a0a0a0;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-y: auto; }
   .left-menu .collapse-menu, #mobile-menu .collapse-menu {
     background-color: #1e292f; }
   .left-menu .brand, #mobile-menu .brand {
@@ -385,6 +387,8 @@ input[type=checkbox], input[type=radio] {
       text-align: center;
       font-family: "Open Sans", sans-serif;
       font-weight: 400; }
+    .payroll-main .payroll-table input[type=checkbox] {
+      position: relative; }
     .payroll-main .payroll-table input[type="checkbox"] {
       -webkit-appearance: none;
       margin-top: 0;
@@ -404,8 +408,8 @@ input[type=checkbox], input[type=radio] {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
       position: absolute;
-      left: 8px;
-      top: 4px;
+      left: 5px;
+      top: 0px;
       display: table;
       width: 6px;
       height: 12px;
@@ -413,42 +417,46 @@ input[type=checkbox], input[type=radio] {
       border-top: 0;
       border-left: 0;
       content: ''; }
+    .payroll-main .payroll-table input[type="checkbox"]:checked:after, .payroll-main .payroll-table .checkbox-inline input[type="checkbox"]:checked:after {
+      background-color: #333333;
+      border-color: #333333; }
     .payroll-main .payroll-table input[type="checkbox"]:disabled:checked:after, .payroll-main .payroll-table .checkbox-inline input[type="checkbox"]:disabled:checked:after {
       background-color: #eeeeee;
       border-color: transparent; }
-    .payroll-main .payroll-table .payroll-table-footer {
+  .payroll-main .payroll-table-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 28px; }
+    .payroll-main .payroll-table-footer .print {
+      color: #fff;
+      padding: 10px 5px;
+      background-color: #ababab;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700; }
+    .payroll-main .payroll-table-footer .table-pagination {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .payroll-main .payroll-table .payroll-table-footer .print {
-        color: #fff;
-        padding: 10px 5px;
-        background-color: #ababab;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700; }
-      .payroll-main .payroll-table .payroll-table-footer .table-pagination {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .payroll-main .payroll-table .payroll-table-footer .table-pagination p {
-          margin-right: 39px;
-          color: #707070; }
-        .payroll-main .payroll-table .payroll-table-footer .table-pagination a {
-          color: #333333; }
+      .payroll-main .payroll-table-footer .table-pagination p {
+        margin-right: 39px;
+        color: #707070; }
+      .payroll-main .payroll-table-footer .table-pagination a {
+        color: #333333; }
 
 .payroll-footer-list {
   display: -webkit-box;
@@ -534,7 +542,7 @@ input[type=checkbox], input[type=radio] {
     display: none; } }
 
 @media screen and (max-width: 1199px) {
-  .payroll-main .payroll-table .payroll-table-footer .table-pagination {
+  .payroll-main .payroll-table-footer .table-pagination {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -544,7 +552,7 @@ input[type=checkbox], input[type=radio] {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
-  .payroll-main .payroll-table .payroll-table-footer .pagination {
+  .payroll-main .payroll-table-footer .pagination {
     margin-top: 0; } }
 
 @media screen and (max-width: 992px) {
@@ -565,14 +573,26 @@ input[type=checkbox], input[type=radio] {
               justify-content: space-between; }
   .left-menu, #mobile-menu {
     width: 100%; }
-  .payroll-main .payroll-table .payroll-table-footer {
+  .payroll-main .table-responsive {
+    border-right: 0px;
+    border-left: 0px; }
+  .payroll-main .payroll-table {
+    padding: 0; }
+  .payroll-main .payroll-table-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .payroll-main .payroll-table .payroll-table-footer .print {
+    .payroll-main .payroll-table-footer .print {
       margin-bottom: 10px; }
+    .payroll-main .payroll-table-footer .table-pagination {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .payroll-main .payroll-table-footer .table-pagination p {
+        margin-right: 0; }
   .mobile-username .dropdown, .mobile-language .dropdown, .mobile-username .dropup, .mobile-language .dropup {
     display: -webkit-box;
     display: -webkit-flex;
@@ -612,7 +632,11 @@ input[type=checkbox], input[type=radio] {
           -ms-flex-direction: row;
               flex-direction: row; }
     .mobile-language .language-logo {
-      margin-right: 5px; } }
+      margin-right: 5px; }
+  .pagination {
+    text-align: center; }
+    .pagination li {
+      display: inline-block; } }
 
 @media screen and (max-width: 550px) {
   .mm-search input {

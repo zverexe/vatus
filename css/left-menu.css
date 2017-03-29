@@ -1,0 +1,28 @@
+.left-menu, #mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 270px;
+  height: 100%;
+  background-color: #263238;
+  color: #a0a0a0;
+  font-size: 14px; }
+  .left-menu .collapse-menu, #mobile-menu .collapse-menu {
+    background-color: #1e292f; }
+  .left-menu .brand, #mobile-menu .brand {
+    padding: 17px 35px 14px 35px;
+    border-bottom: 1px solid #3a4144; }
+  .left-menu .left-menu-item, #mobile-menu .left-menu-item {
+    border-bottom: 1px solid #3a4144;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; }
+    .left-menu .left-menu-item .menu-link, #mobile-menu .left-menu-item .menu-link {
+      padding: 20px 0 20px 30px; }
+    .left-menu .left-menu-item i, #mobile-menu .left-menu-item i {
+      margin-right: 17px; }
+    .left-menu .left-menu-item .submenu-links, #mobile-menu .left-menu-item .submenu-links {
+      padding: 20px 0 20px 60px; }
+
+#mobile-menu {
+  width: 100%; }

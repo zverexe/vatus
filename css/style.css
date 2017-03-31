@@ -1328,6 +1328,10 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
 .menu-link-opened {
   background-color: #1e292f; }
 
+input {
+  border: 1px solid #eeeeee !important;
+  background-color: #fff; }
+
 .todo-new-item {
   background-color: #fff; }
   .todo-new-item form {

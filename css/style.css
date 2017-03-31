@@ -721,7 +721,12 @@
   height: 18px; }
 
 .inventory-bottom {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
+
+.inventory-main {
+  margin-bottom: 20px; }
+  .inventory-main .main-table-select {
+    margin: 0 10px; }
 
 .inventory-purchase-orders .todo-new-item form {
   width: 100%; }
@@ -729,6 +734,9 @@
 .clients-page-stripe {
   background-color: #97cf4a;
   height: 18px; }
+
+.clients-main .main-table-select {
+  margin: 0 10px; }
 
 .document-page-stripe {
   background-color: #32b092;

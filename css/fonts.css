@@ -38,3 +38,7 @@
   src: url("../fonts/MyriadProSemiBoldItalic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+
+@font-face {
+  font-family: "GothicCentury";
+  src: url("../fonts/GothicCentury.ttf") format("truetype"); }

@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid header header-welcome">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="header-wrapper">
+                <div class="logo hidden-sm hidden-xs">
+                    <a href=""><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="hidden-md hidden-lg  header__menu">
+                    <a id="header__button" class="hamburger" href="#">
+                        <div class="hamburger__inner"></div>
+                    </a>
+                    <div id="mobile-menu">
+                        <div class="mobile-left-menu-wrapper"  id="accordion">
+                            <div class="mobile-username">
+                                <div class="dropdown">
+                                    <div class="user-logo">
+                                        <img src="img/user-logo.png" alt="">
+                                    </div>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Mike Hussy
+                                        <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-m">
+                                        <i class="fa fa-tachometer" aria-hidden="true"></i>My Company</a>
+                                </div>
+                                <div id="collapseOne-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo-m">
+                                        <i class="fa fa-th-large" aria-hidden="true"></i>Clients</a>
+                                </div>
+                                <div id="collapseTwo-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree-m">
+                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers</a>
+                                </div>
+                                <div id="collapseThree-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour-m">
+                                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources</a>
+                                </div>
+                                <div id="collapseFour-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen-m">
+                                        <i class="fa fa-table" aria-hidden="true"></i>Payroll</a>
+                                </div>
+                                <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive-m">
+                                        <i class="fa fa-server" aria-hidden="true"></i>Contracts</a>
+                                </div>
+                                <div id="collapseFive-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix-m">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory</a>
+                                </div>
+                                <div id="collapseSix-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven-m">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management</a>
+                                </div>
+                                <div id="collapseSeven-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight-m">
+                                        <i class="fa fa-map-o" aria-hidden="true"></i>Meetings</a>
+                                </div>
+                                <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine-m">
+                                        <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                                </div>
+                                <div id="collapseNine-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left-menu-item">
+                                <div class="menu-link payroll">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven-m">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>Login</a>
+                                </div>
+                                <div id="collapseEleven-m" class="panel-collapse collapse collapse-menu ">
+                                    <ul class="list-unstyled submenu-links">
+                                        <li><a href="">First item</a></li>
+                                        <li><a href="">Second item</a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mobile-language ">
+                                <div class="dropup">
+                                    <div class="language-logo">
+                                        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Language
+                                        <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mobile-logo visible-sm visible-xs">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <ul class="list-unstyled list-inline header-controls hidden-sm hidden-xs">
+                    <li class="hidden-xs"><img src="img/header-image.png" class="banner" alt=""></li>
+                    <li class="seacrh-bar hidden-xs">
+                        <div class="search-input"><input type="text"   placeholder="Search" >
+                            <span class="glyphicon glyphicon-search search-btn"></span>
+                        </div>
+                    </li>
+                    <li class="language">
+                        <div class="dropdown">
+                            <div class="language-logo">
+                                <img src="img/language.png" alt="">
+                            </div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Language
+                                <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="username">
+                        <div class="dropdown">
+                            <div class="user-logo">
+                                <img src="img/user-logo.png" alt="">
+                            </div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Mike Hussy
+                                <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid start-page-main">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="website-menu">
+                <div class="website-menu-header">
+                    <h4 class="black-1">Welcome Mike</h4>
+                </div>
+                <div class="website-menu-items">
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo clients">
+                            <img src="img/shape-17.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Clients</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo suppliers">
+                            <img src="img/color-fill-2.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Suppliers</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo human-resources">
+                            <img src="img/color-fill-1.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Human<br> Resources</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo payroll">
+                            <img src="img/shape-14.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Payroll</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo contracts">
+                            <img src="img/shape-11.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Contracts</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo inventory">
+                            <img src="img/shape-13.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Inventory</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo document">
+                            <img src="img/shape-15.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1 margin-10">Document<br> Management</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo meetings">
+                            <img src="img/shape-16.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Meetings</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                    <a href="" class="website-menu-item">
+                        <div class="menu-item-logo company">
+                            <img src="img/shape-18.png" alt="">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2 class="black-1">Company</h2>
+                            <h4 class="gray-4">Last Week’s Users 209</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+       <div class="col-sm-12">
+           <div class="start-page-alerts">
+               <div class="alerts-wrapper">
+                   <h2>Alerts</h2>
+                   <h4>4 October, 2016</h4>
+                   <ul class="list-unstyled alerts-list">
+                       <li>
+                            <div class="alert-list-left">
+                                <div class="alert-time document-alert">
+                                    <p>10:31 AM</p>
+                                </div>
+                                <p>
+                                    <span class="alert-title">Alert 1</span>
+                                    – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time document-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time company-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time  human-resources-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time  human-resources-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time  human-resources-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time  meetings-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                       <li>
+                           <div class="alert-list-left">
+                               <div class="alert-time  meetings-alert">
+                                   <p>10:31 AM</p>
+                               </div>
+                               <p>
+                                   <span class="alert-title">Alert 1</span>
+                                   – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                               </p>
+                           </div>
+                           <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="text-center">© 2017 Ovatus	Dr. A. Mayers: 280.7119   Christopher Dixon: 684.9638</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/jquery.mmenu.all.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

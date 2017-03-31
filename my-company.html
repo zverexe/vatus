@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -10,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.vertical-tabs.min.css">
     <link rel="stylesheet" href="css/jquery.mmenu.all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,11 +27,9 @@
                     </a>
                     <div id="mobile-menu">
                         <div class="mobile-left-menu-wrapper"  id="accordion">
-                            <div class="mobile-username">
-
+                            <div class="mobile-username visible-xs visible-sm">
                                 <div class="dropdown">
                                     <div class="user-logo">
-
                                         <img src="img/user-logo.png" alt="">
                                     </div>
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -64,7 +65,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                             <div class="left-menu-item">
                                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree-m">
                                     <div class="menu-link suppliers">
@@ -91,13 +91,13 @@
                                 </a>
                                 <div id="collapseFour-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li class="human-resources"><a href="">Employee Details</a></li>
-                                        <li class="human-resources"><a href="">Absenteeism</a></li>
-                                        <li class="human-resources"><a href="">Resumes</a></li>
-                                        <li class="human-resources"><a href="">Vacation</a></li>
-                                        <li class="human-resources"><a href="">Documents</a></li>
-                                        <li class="human-resources"><a href="">Forms</a></li>
-                                        <li class="human-resources"><a href="">Alerts</a></li>
+                                        <li><a href="">Employee Details</a></li>
+                                        <li><a href="">Absenteeism</a></li>
+                                        <li><a href="">Resumes</a></li>
+                                        <li><a href="">Vacation</a></li>
+                                        <li><a href="">Documents</a></li>
+                                        <li><a href="">Forms</a></li>
+                                        <li><a href="">Alerts</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -197,7 +197,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="mobile-language">
+                            <div class="mobile-language visible-xs visible-sm">
                                 <div class="dropup">
                                     <div class="language-logo">
                                         <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
@@ -214,6 +214,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="mobile-logo visible-xs visible-sm">
@@ -263,7 +264,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid header-menu-item">
+<div class="container-fluid my-company-page-stripe">
 </div>
 <div class="container-fluid content-main-section">
     <div class="row">
@@ -278,391 +279,211 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-main-section payroll-section">
+<div class="container-fluid content-main-section my-company-main">
     <div class="row">
         <div class="col-sm-12">
-            <div class="payroll-main ">
-                <div class="payroll-header">
-                    <h4 class="black-1">Ray Run</h4>
-                    <div class="payroll-table-controls">
-                        <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <!--<div class="payroll-table-header">
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            01/01/2017
-                            <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown4">
-                            <li><a href="">31/01/2017 </a></li>
-                            <li><a href="">31/01/2017 </a></li>
-                            <li><a href="#">31/01/2017 </a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            31/01/2017
-                            <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown5">
-                            <li><a href="">31/01/2017 </a></li>
-                            <li><a href="">31/01/2017 </a></li>
-                            <li><a href="#">31/01/2017 </a></li>
-                        </ul>
-                    </div>
-                    <div class="main-table-seacrh">
-                        <div class="search-input">
-                            <input type="text"placeholder="Search">
-                            <span class="glyphicon glyphicon-search search-logo"></span>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="main-table-filter">
-                    <div class="table-filter-left">
-                        <select name=""  class="main-table-select">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value=""></option>
-                        </select>
-                        <select name="" class="main-table-select">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="main-table-seacrh">
-                        <div class="search-input">
-                            <input type="text"placeholder="Search">
-                            <span class="glyphicon glyphicon-search search-logo"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-table table-responsive">
-                    <table class="table table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Employee</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Payment Method</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Earnings</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Deductions</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Hours</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr><tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-client-name">
-                                    <input type="checkbox">
-                                    <p>John Doe</p>
-                                </div>
-                            </td>
-                            <td>
-                                Direct Deposit
-                            </td>
-                            <td>
-                                5.500.00
-                            </td>
-                            <td>
-                                555.00
-                            </td>
-                            <td>
-                                40
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="main-table-footer">
-                    <button type="button" class="btn print">PRINT pay slips</button>
-                    <nav class="main-table-pagination payroll-pagination" aria-label="Page navigation">
-                        <p class="pagination-pages-number">Showing 1 to 10 of 57 entries</p>
-                        <ul class="pagination black-1">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">Previous</span>
-                                </a>
-                                <a href="#" aria-label="First">
-                                    <span aria-hidden="true">First</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">Next</span>
-                                </a>
-                                <a href="#" aria-label="Last">
-                                    <span aria-hidden="true">Last</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="my-company-info">
+                <div class="my-company-info-left"> <!-- required for floating -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-left">
+                        <li class="active"><a href="#about-us" data-toggle="tab">About Us</a></li>
+                        <li><a href="#contacts" data-toggle="tab">Contacts</a></li>
+                        <li><a href="#financial" data-toggle="tab">Financial</a></li>
+                        <li><a href="#legal" data-toggle="tab">Legal</a></li>
+                    </ul>
                 </div>
 
-            </div>
-            <div class="payroll-footer">
-                <ul class="list-unstyled list-inline payroll-footer-list">
-                    <li>
-                        <img src="img/image-1.png" alt="">
-                        <div>
-                            <h2 class="black-1">$5,500</h2>
-                            <p>NIS Deductions</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/image-1.png" alt="">
-                        <div>
-                            <h2 class="black-1">$5,500</h2>
-                            <p>NIS Deductions</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/image-1.png" alt="">
-                        <div>
-                            <h2 class="black-1">$5,500</h2>
-                            <p>NIS Deductions</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/image-1.png" alt="">
-                        <div>
-                            <h2 class="black-1">$5,500</h2>
-                            <p>NIS Deductions</p>
-                        </div>
-                    </li>
-
-                </ul>
+                <div class="my-company-info-right">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="about-us">Home Tab.</div>
+                        <div class="tab-pane" id="contacts">Profile Tab.</div>
+                        <div class="tab-pane" id="financial">Messages Tab.</div>
+                        <div class="tab-pane" id="legal">Settings Tab.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="container-fluid content-main-section company-bottom">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="company-bottom-wrapper">
+                <div class="my-company-users">
+                    <div class="table-header">
+                        <h4 class="black-1">Users</h4>
+                        <div class="main-table-controls">
+                            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-table table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>
+                                    #
+                                </th>
+                                <th>
+                                    First Name
+                                </th>
+                                <th>
+                                    Last Name
+                                </th>
+                                <th>
+                                    Username
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Josef
+                                </td>
+                                <td>
+                                    Sanam
+                                </td>
+                                <td>
+                                    Josefsanam
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Josef
+                                </td>
+                                <td>
+                                   Sanam
+                                </td>
+                                <td>
+                                    Josefsanam
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    Jenny
+                                </td>
+                                <td>
+                                    Lopez
+                                </td>
+                                <td>
+                                    Jennyfar
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    4
+                                </td>
+                                <td>
+                                    David
+                                </td>
+                                <td>
+                                    Hussy
+                                </td>
+                                <td>
+                                    David09
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    5
+                                </td>
+                                <td>
+                                    Mike
+                                </td>
+                                <td>
+                                    Strokes
+                                </td>
+                                <td>
+                                    Strokes
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    6
+                                </td>
+                                <td>
+                                    Mike
+                                </td>
+                                <td>
+                                    Strokes
+                                </td>
+                                <td>
+                                    Strokes
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="alerts-window">
+                    <div class="alerts-header">
+                        <h2>Alerts</h2>
+                        <p>4 October, 2016</p>
+                    </div>
+
+                    <ul class="list-unstyled alerts-list">
+
+                        <li>
+                            <div class="alert-list-left">
+                                <div class="alert-time  company-alert">
+                                    <p>10:31 AM</p>
+                                </div>
+                                <p>
+                                    <span class="alert-title">Alert 1</span>
+                                    Meet My Close Friend
+                                </p>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <div class="alert-list-left">
+                                <div class="alert-time  company-alert">
+                                    <p>10:31 AM</p>
+                                </div>
+                                <p>
+                                    <span class="alert-title">Alert 1</span>
+                                    Lunch With My Wife
+                                </p>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <div class="alert-list-left">
+                                <div class="alert-time  company-alert">
+                                    <p>10:31 AM</p>
+                                </div>
+                                <p>
+                                    <span class="alert-title">Alert 1</span>
+                                    UI Design Course
+                                </p>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn add-alert-btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
 
 <div class="left-menu visible-md visible-lg">
     <div class="brand">
@@ -673,26 +494,26 @@
     <div class="left-menu-wrapper accordion" id="accordion1">
         <div class="panel">
             <div class="left-menu-item">
-                <a class=""  href="my-company.html">
+                <a  class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
                     <div class="menu-link  my-company">
                         <div class="menu-link-item">
                             <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
                         </div>
                     </div>
                 </a>
+
             </div>
             <div class="left-menu-item">
                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
                     <div class="menu-link clients">
                         <div class="menu-link-item">
-                        <i class="fa fa-th-large" aria-hidden="true"></i>Clients
+                            <i class="fa fa-th-large" aria-hidden="true"></i>Clients
                         </div>
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
                 <div id="collapseTwo" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li><a href="clients-main.html">Clients</a></li>
                         <li><a href="">Client Detalis</a></li>
                     </ul>
                 </div>
@@ -701,30 +522,30 @@
                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
                     <div class="menu-link suppliers">
                         <div class="menu-link-item">
-                        <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
                         </div>
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
                 <div id="collapseThree" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li><a href="suppliers.html">Suppliers</a></li>
                         <li><a href="">Supplier Details</a></li>
+
                     </ul>
+
                 </div>
             </div>
             <div class="left-menu-item">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
                     <div class="menu-link human-resources">
                         <div class="menu-link-item">
-                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
                         </div>
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
                 <div id="collapseFour" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li class="human-resources"><a href="">Human Resources</a></li>
                         <li class="human-resources"><a href="">Employee Details</a></li>
                         <li class="human-resources"><a href="">Absenteeism</a></li>
                         <li class="human-resources"><a href="">Resumes</a></li>
@@ -732,6 +553,7 @@
                         <li class="human-resources"><a href="">Documents</a></li>
                         <li class="human-resources"><a href="">Forms</a></li>
                         <li class="human-resources"><a href="">Alerts</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -739,7 +561,7 @@
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
                     <div class="menu-link payroll">
                         <div class="menu-link-item">
-                        <i class="fa fa-table" aria-hidden="true"></i>Payroll
+                            <i class="fa fa-table" aria-hidden="true"></i>Payroll
                         </div>
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
@@ -762,7 +584,7 @@
                 <a href="">
                     <div class="menu-link contracts">
                         <div class="menu-link-item">
-                        <i class="fa fa-server" aria-hidden="true"></i>Contracts
+                            <i class="fa fa-server" aria-hidden="true"></i>Contracts
                         </div>
                     </div>
                 </a>
@@ -771,25 +593,24 @@
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
                     <div class="menu-link inventory">
                         <div class="menu-link-item">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
                         </div>
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
                 <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links ">
-                        <li class="inventory"><a href="inventory-main.html">Inventory</a></li>
-                        <li class="inventory"><a href="inventory-new-item.html">New Item</a></li>
-                        <li class="inventory"><a href="invntory-purchase-orders.html">Purchase Order</a></li>
-                        <li class="inventory"><a href="inventory-invoices.html">Invoices</a></li>
+                        <li class="inventory"><a href="">New Item</a></li>
+                        <li class="inventory"><a href="">Purchase Order</a></li>
+                        <li class="inventory"><a href="">Invoices</a></li>
                     </ul>
                 </div>
             </div>
             <div class="left-menu-item">
-                <a href="document-management.html">
+                <a href="">
                     <div class="menu-link document-management">
                         <div class="menu-link-item">
-                        <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
                         </div>
                     </div>
                 </a>
@@ -798,15 +619,14 @@
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
                     <div class="menu-link meetings">
                         <div class="menu-link-item ">
-                        <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
+                            <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                         </div>
-                          <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
                 <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li class="meetings"><a href="meetings-page.html">Meetings</a></li>
-                        <li class="meetings"><a href="meetings-members.html">Members</a></li>
+                        <li class="meetings"><a href="">Members</a></li>
                     </ul>
                 </div>
             </div>
@@ -814,7 +634,7 @@
                 <a href="">
                     <div class="menu-link ">
                         <div class="menu-link-item">
-                        <i class="fa fa-user" aria-hidden="true"></i>Profile
+                            <i class="fa fa-user" aria-hidden="true"></i>Profile
                         </div>
                     </div>
                 </a>
@@ -823,7 +643,7 @@
                 <a href="">
                     <div class="menu-link">
                         <div class="menu-link-item">
-                        <i class="fa fa-lock" aria-hidden="true"></i>Login
+                            <i class="fa fa-lock" aria-hidden="true"></i>Login
                         </div>
                     </div>
                 </a>
@@ -831,7 +651,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid footer">
+<div class="container-fluid footer ">
     <div class="row">
         <div class="col-sm-12">
             <p class="text-center">© 2017 Ovatus	Dr. A. Mayers: 280.7119   Christopher Dixon: 684.9638</p>
@@ -843,6 +663,8 @@
 
 <script src="https://cdn.jsdelivr.net/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
 <script src="js/jquery.mmenu.all.min.js"></script>
 <script src="js/script.js"></script>
 </body>

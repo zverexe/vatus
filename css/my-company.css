@@ -1,0 +1,49 @@
+/*
+* My company page css
+ */
+.my-company-page-stripe {
+  height: 18px;
+  background-color: #3bbdd4; }
+
+.my-company-info {
+  height: 400px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid #e4e4e4; }
+  .my-company-info .my-company-info-left {
+    width: 150px;
+    height: 100%;
+    background-color: #d0d0d0; }
+    .my-company-info .my-company-info-left .tabs-left {
+      background-color: #f4f4f4;
+      padding-top: 0; }
+  .my-company-info .my-company-info-right {
+    width: 100%;
+    height: 100%;
+    padding: 28px;
+    font-family: "Open Sans", sans-serif;
+    color: #d0d0d0; }
+
+.my-company-users {
+  background-color: #fff;
+  width: 700px;
+  margin-right: 20px; }
+  .my-company-users .table-header {
+    border-bottom: 1px solid #eeeeee; }
+
+.company-bottom {
+  margin-bottom: 20px; }
+
+.company-bottom-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }

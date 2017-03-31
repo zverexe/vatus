@@ -19,146 +19,82 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     margin-bottom: 28px; }
-  .payroll-main .payroll-table-controls {
-    color: #a1a1a1; }
-  .payroll-main .payroll-table {
-    padding: 0 28px; }
-    .payroll-main .payroll-table .table .sort {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .payroll-main .payroll-table .table .sort a {
-        margin-top: -10px; }
-    .payroll-main .payroll-table .table .test {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .payroll-main .payroll-table .table .fa-chevron-down, .payroll-main .payroll-table .table .fa-chevron-up {
-      font-size: 10px; }
-    .payroll-main .payroll-table .btn-default {
-      border-color: #fff !important;
-      background-color: #fff !important; }
-      .payroll-main .payroll-table .btn-default:hover {
-        background-color: #fff; }
-      .payroll-main .payroll-table .btn-default .open > .dropdown-toggle.btn-default {
-        background-color: #fff;
-        color: #333333; }
-    .payroll-main .payroll-table .btn {
-      padding-left: 0px; }
-    .payroll-main .payroll-table .payroll-table-header {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .payroll-main .payroll-table .table-client-name {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-    .payroll-main .payroll-table th {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600; }
-    .payroll-main .payroll-table td {
-      text-align: center;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400; }
-    .payroll-main .payroll-table input[type=checkbox] {
-      position: relative; }
-    .payroll-main .payroll-table input[type="checkbox"] {
-      -webkit-appearance: none;
-      margin-top: 0;
-      margin-right: 21px; }
-    .payroll-main .payroll-table input[type="checkbox"]:after, .payroll-main .payroll-table .checkbox-inline input[type="checkbox"]:after {
-      border: 1px solid #d7d7d7;
-      -webkit-border-radius: 3px;
-              border-radius: 3px;
-      content: '';
-      display: block;
-      height: 15px;
-      -webkit-transition: 240ms;
-      transition: 240ms;
-      width: 15px; }
-    .payroll-main .payroll-table input[type="checkbox"]:checked:before, .payroll-main .payroll-table .checkbox-inline input[type="checkbox"]:checked:before {
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-      position: absolute;
-      left: 5px;
-      top: 0px;
-      display: table;
-      width: 6px;
-      height: 12px;
-      border: 2px solid #fff;
-      border-top: 0;
-      border-left: 0;
-      content: ''; }
-    .payroll-main .payroll-table input[type="checkbox"]:checked:after, .payroll-main .payroll-table .checkbox-inline input[type="checkbox"]:checked:after {
-      background-color: #333333;
-      border-color: #333333; }
-    .payroll-main .payroll-table input[type="checkbox"]:disabled:checked:after, .payroll-main .payroll-table .checkbox-inline input[type="checkbox"]:disabled:checked:after {
-      background-color: #eeeeee;
-      border-color: transparent; }
-  .payroll-main .payroll-table-footer {
+  .payroll-main .payroll-table-header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 0 28px; }
-    .payroll-main .payroll-table-footer .print {
-      color: #fff;
-      padding: 10px 5px;
-      background-color: #ababab;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700; }
-    .payroll-main .payroll-table-footer .table-pagination {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .payroll-main .payroll-table-footer .table-pagination p {
-        margin-right: 39px;
-        color: #707070; }
-      .payroll-main .payroll-table-footer .table-pagination a {
+    .payroll-main .payroll-table-header .btn-default {
+      border-color: #fff !important;
+      background-color: #fff !important; }
+      .payroll-main .payroll-table-header .btn-default:hover {
+        background-color: #fff; }
+      .payroll-main .payroll-table-header .btn-default .open > .dropdown-toggle.btn-default {
+        background-color: #fff;
         color: #333333; }
+  .payroll-main .payroll-table-controls {
+    color: #a1a1a1; }
+  .payroll-main .main-table {
+    padding: 0 28px;
+    margin-top: 30px; }
+  .payroll-main .btn {
+    padding-left: 0px; }
+  .payroll-main .table-client-name {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .payroll-main th {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+  .payroll-main td {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; }
+
+.main-table-footer {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;*/ }
+  .main-table-footer .print {
+    color: #fff;
+    padding: 10px 5px;
+    background-color: #ababab;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+  .main-table-footer .payroll-pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: inherit;
+    -webkit-justify-content: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    width: inherit; }
+    .main-table-footer .payroll-pagination p {
+      margin-right: 39px;
+      color: #707070; }
+    .main-table-footer .payroll-pagination a {
+      color: #333333; }
 
 .payroll-footer-list {
   display: -webkit-box;

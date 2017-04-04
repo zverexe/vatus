@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -12,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" />
-
     <link rel="stylesheet" href="css/jquery.mmenu.all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -117,7 +115,7 @@
                                 </a>
                                 <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li class="payroll-link"><a href="index.html">Payroll</a></li>
+                                        <li class="payroll-link "><a href="index.html">Payroll</a></li>
                                         <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
                                         <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
                                         <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
@@ -141,14 +139,14 @@
                                         <div class="menu-link-item">
                                             <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
                                         </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                                     </div>
                                 </a>
-                                <div id="collapseSix-m" class="panel-collapse collapse collapse-menu ">
+                                <div id="collapseSix-m" class="panel-collapse collapse in collapse-menu ">
                                     <ul class="list-unstyled submenu-links ">
                                         <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
                                         <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
-                                        <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
+                                        <li class="inventory-link menu-active-link inventory"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
                                         <li class="inventory-link"><a href="inventory-invoices.html">Invoices</a></li>
                                     </ul>
                                 </div>
@@ -168,13 +166,13 @@
                                         <div class="menu-link-item ">
                                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                                         </div>
-                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                                     </div>
                                 </a>
-                                <div id="collapseEight-m" class="panel-collapse collapse in collapse-menu ">
+                                <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
                                         <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                                        <li class="meetings-link menu-active-link meetings"><a href="meetings-members.html">Members</a></li>
+                                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -262,7 +260,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid meetings-page-stripe">
+<div class="container-fluid inventory-page-stripe">
 </div>
 <div class="container-fluid content-main-section">
     <div class="row">
@@ -271,334 +269,165 @@
                 <li>
                     <a href="#">Home</a>
                 </li>
-                <li><a href="#">Meetings</a></li>
-                <li class="active">Members</li>
+                <li><a href="#">Inventory</a></li>
+                <li class="active">Purchase Orders</li>
             </ol>
         </div>
     </div>
 </div>
-<div class="container-fluid content-main-section ">
+<div class="container-fluid content-main-section inventory-main inventory-purchase-orders">
     <div class="row">
-        <div class="col-sm-12">
-            <div class="meetings-main section-background">
+        <div class="col-md-12 col-lg-6">
+            <div class="todo-new-item">
                 <div class="table-header">
-                    <h4 class="black-1">Members</h4>
+                    <h4 class="black-1">Purchase Orders</h4>
                     <div class="main-table-controls">
                         <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="main-table-filter">
-                    <div class="table-filter-left">
-                        <p>Show</p>
-                        <select name="table-data" id="table-data" class="main-table-select">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                        </select>
-                        <p>Entries</p>
+                <form class="add-new-todo">
+                    <div class="form-group">
+                        <label for="todo-name">Name</label>
+                        <input type="text" class="form-control" id="todo-name" placeholder="Name">
                     </div>
-                    <div class="main-table-seacrh">
-                        <div class="search-input">
-                            <input type="text" placeholder="Search">
-                            <span class="glyphicon glyphicon-search search-logo"></span>
-                        </div>
+                    <div class="form-group">
+                        <label for="todo-category">Category</label>
+                        <input type="text" class="form-control" id="todo-category" placeholder="Category">
                     </div>
-                </div>
-                <div class="main-table table-responsive">
-                    <table class="table table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Name</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Position</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Email</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Status</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Add</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
-                            </td>
-                        </tr>
-
-
-
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="main-table-footer">
-                    <nav class="main-table-pagination" aria-label="Page navigation">
-                        <p class="pagination-pages-number">Showing 1 to 10 of 57 entries</p>
-                        <ul class="pagination black-1">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">Previous</span>
-                                </a>
-                                <a href="#" aria-label="First">
-                                    <span aria-hidden="true">First</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">Next</span>
-                                </a>
-                                <a href="#" aria-label="Last">
-                                    <span aria-hidden="true">Last</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                    <div class="form-group">
+                        <label for="todo-location">Location</label>
+                        <input type="text" class="form-control" id="todo-location" placeholder="Location">
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-price">Price</label>
+                        <input type="text" class="form-control" id="todo-price" placeholder="Price">
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-quantity">Quantity</label>
+                        <input type="password" class="form-control" id="todo-quantity" placeholder="Quantity">
+                    </div>
+                    <button type="submit" class="btn btn-default form-submit-btn">Submit</button>
+                </form>
             </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid content-main-section">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="members-bottom section-background">
+        <div class="col-lg-6 col-md-12">
+            <div class="main-items-block">
                 <div class="table-header">
-                    <h4 class="black-1">Members</h4>
+                    <h4 class="black-1">Purchase Orders</h4>
                     <div class="main-table-controls">
                         <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="add-new-member">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="member-name" class="col-sm-3 control-label">Name</label>
-                            <div class="col-sm-8 ">
-                                <input type="text" class="form-control" id="member-name" placeholder="">
-                            </div>
+                <ul class="list-unstyled todo-list">
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet,
+                            </p>
                         </div>
-                        <div class="form-group">
-                            <label for="member-email" class="col-sm-3 control-label">Email</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="member-email" placeholder="">
-                            </div>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
                         </div>
-                        <div class="form-group">
-                            <label for="member-position" class="col-sm-3 control-label">Position</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="member-position" placeholder="">
-                            </div>
+                    </li>
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet
+                            </p>
                         </div>
-                        <div class="form-group">
-                            <label for="member-user-rights" class="col-sm-3 control-label">User Rights</label>
-                            <div class="col-sm-8">
-                                <textarea name="member-user-rights" id="member-user-rights" cols="30" rows="3"></textarea>
-                            </div>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
                         </div>
-                        <div class="form-group">
-                            <label for="add-new-member" class="col-sm-3 control-label"></label>
-                            <div class="col-sm-8">
-                                <button type="submit" class="btn form-submit-btn" id="add-new-member">Submit</button>
-                            </div>
+                    </li>
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet
+                            </p>
                         </div>
-                    </form>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-item-left">
+                            <input name="check" type="checkbox" value="">
+                            <p>
+                                <span class="todo-item-title">Alert 1</span>
+                                – Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                        <div class="todo-item-controls">
+                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="todo-items-footer">
+                    <button type="button" class="btn select-all-todo">Select All</button>
+                    <div class="todo-search">
+                        <input type="text" placeholder="Search here...">
+                    </div>
+                    <button type="button" class="btn add-todo">Add</button>
                 </div>
             </div>
         </div>
@@ -684,7 +513,7 @@
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseTen" class="panel-collapse collapse  collapse-menu ">
+                <div id="collapseTen" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
                         <li class="payroll-link"><a href="index.html">Payroll</a></li>
                         <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
@@ -710,14 +539,14 @@
                         <div class="menu-link-item">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
                         </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
+                <div id="collapseSix" class="panel-collapse collapse in collapse-menu ">
+                    <ul class="list-unstyled submenu-links ">
                         <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
                         <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
-                        <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
+                        <li class="inventory-link menu-active-link inventory"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
                         <li class="inventory-link"><a href="inventory-invoices.html">Invoices</a></li>
                     </ul>
                 </div>
@@ -737,13 +566,13 @@
                         <div class="menu-link-item ">
                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                         </div>
-                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseEight" class="panel-collapse collapse in collapse-menu ">
+                <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
                         <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                        <li class="meetings-link menu-active-link meetings"><a href="meetings-members.html">Members</a></li>
+                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                     </ul>
                 </div>
             </div>
@@ -768,7 +597,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid footer ">
+<div class="container-fluid footer footer-fixed inventory-footer">
     <div class="row">
         <div class="col-sm-12">
             <p class="text-center">© 2017 Ovatus	Dr. A. Mayers: 280.7119   Christopher Dixon: 684.9638</p>

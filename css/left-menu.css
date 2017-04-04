@@ -1,3 +1,6 @@
+/*
+* Left menu css
+ */
 .left-menu {
   position: fixed;
   top: 0;
@@ -28,23 +31,44 @@
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-    .left-menu .left-menu-item .contracts:hover {
+    .left-menu .left-menu-item .menu-link-item {
+      width: 100%;
+      position: relative; }
+    .left-menu .left-menu-item .contracts {
       color: #f85567; }
-    .left-menu .left-menu-item .inventory:hover {
+    .left-menu .left-menu-item .inventory {
       color: #d00fb1; }
-    .left-menu .left-menu-item .document-management:hover {
+    .left-menu .left-menu-item .document-management {
       color: #32b092; }
-    .left-menu .left-menu-item .meetings:hover {
+    .left-menu .left-menu-item .meetings {
       color: #f8755f; }
-    .left-menu .left-menu-item .my-company:hover {
+    .left-menu .left-menu-item .my-company {
       color: #3bbdd4; }
-    .left-menu .left-menu-item .clients:hover {
+    .left-menu .left-menu-item .clients {
       color: #97cf4a; }
-    .left-menu .left-menu-item .suppliers:hover {
+    .left-menu .left-menu-item .suppliers {
       color: #339ac8; }
-    .left-menu .left-menu-item .payroll:hover {
+    .left-menu .left-menu-item .payroll {
       color: #f9a159; }
-    .left-menu .left-menu-item .human-resources:hover {
+    .left-menu .left-menu-item .human-resources {
+      color: #face1e; }
+    .left-menu .left-menu-item .contracts-link:hover {
+      color: #f85567; }
+    .left-menu .left-menu-item .inventory-link:hover {
+      color: #d00fb1; }
+    .left-menu .left-menu-item .document-management-link:hover {
+      color: #32b092; }
+    .left-menu .left-menu-item .meetings-link:hover {
+      color: #f8755f; }
+    .left-menu .left-menu-item .my-company-link:hover {
+      color: #3bbdd4; }
+    .left-menu .left-menu-item .clients-link:hover {
+      color: #97cf4a; }
+    .left-menu .left-menu-item .suppliers-link:hover {
+      color: #339ac8; }
+    .left-menu .left-menu-item .payroll-link:hover {
+      color: #f9a159; }
+    .left-menu .left-menu-item .human-resources-link:hover {
       color: #face1e; }
     .left-menu .left-menu-item i {
       margin-right: 17px; }
@@ -53,6 +77,26 @@
       margin-left: 20px; }
     .left-menu .left-menu-item .submenu-links {
       padding: 20px 0 20px 60px; }
+      .left-menu .left-menu-item .submenu-links li {
+        margin-bottom: 25px;
+        position: relative; }
+
+.menu-active-link {
+  /*&:after {
+    left: -9px;
+    color: $primary-fff;
+  }*/ }
+  .menu-active-link:after, .menu-active-link:before {
+    content: "\f0d9";
+    font-family: fontAwesome;
+    width: 7px;
+    height: 60px;
+    font-size: 32px;
+    color: #eeeeee;
+    position: absolute;
+    top: -13px;
+    right: 4px;
+    /* Projects the arrow tot he direction that we want */ }
 
 #mobile-menu {
   width: 100%;
@@ -80,6 +124,27 @@
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+    #mobile-menu .left-menu-item .menu-link-item {
+      width: 100%;
+      position: relative; }
+    #mobile-menu .left-menu-item .contracts {
+      color: #f85567; }
+    #mobile-menu .left-menu-item .inventory {
+      color: #d00fb1; }
+    #mobile-menu .left-menu-item .document-management {
+      color: #32b092; }
+    #mobile-menu .left-menu-item .meetings {
+      color: #f8755f; }
+    #mobile-menu .left-menu-item .my-company {
+      color: #3bbdd4; }
+    #mobile-menu .left-menu-item .clients {
+      color: #97cf4a; }
+    #mobile-menu .left-menu-item .suppliers {
+      color: #339ac8; }
+    #mobile-menu .left-menu-item .payroll {
+      color: #f9a159; }
+    #mobile-menu .left-menu-item .human-resources {
+      color: #face1e; }
     #mobile-menu .left-menu-item .contracts:hover {
       color: #f85567; }
     #mobile-menu .left-menu-item .inventory:hover {
@@ -105,3 +170,6 @@
       margin-left: 20px; }
     #mobile-menu .left-menu-item .submenu-links {
       padding: 20px 0 20px 60px; }
+      #mobile-menu .left-menu-item .submenu-links li {
+        margin-bottom: 25px;
+        position: relative; }

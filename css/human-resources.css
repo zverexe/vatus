@@ -1,0 +1,37 @@
+.human-resources-page-stripe {
+  background-color: #face1e;
+  height: 18px; }
+
+.human-resources-alerts .alerts-window {
+  width: 100%;
+  height: 500px; }
+  .human-resources-alerts .alerts-window .add-alert-btn {
+    width: 50%; }
+
+.human-resources-main .todo-items-footer .todo-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .human-resources-main .todo-items-footer .todo-search input {
+    margin-left: 10px;
+    width: 600px; }
+
+.human-resources-main .calendar-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .human-resources-main .calendar-controls h4 {
+    margin-right: 20px; }
+  .human-resources-main .calendar-controls i:first-child {
+    margin-right: 10px; }
+
+.human-resources-bottom {
+  margin-bottom: 26px; }
+  .human-resources-bottom .alerts-window {
+    width: 100%; }

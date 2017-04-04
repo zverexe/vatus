@@ -66,21 +66,21 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    color: #333333;
-    justify-content: space-between; }
-    .header .header-controls .seacrh-bar, .header .header-controls .language, .header .header-controls .username {
-      border-right: 0.5px solid #e0e0e0;
+    color: #333333; }
+    .header .header-controls .search-bar, .header .header-controls .language, .header .header-controls .username {
+      border-right: 1px solid #e0e0e0;
       padding-top: 28px; }
-    .header .header-controls .seacrh-bar, .header .header-controls .language, .header .header-controls .username {
-      border-right: 0.5px solid #e0e0e0;
-      padding-top: 28px; }
-  .header .seacrh-bar {
+  .header .banner-container {
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    margin-left: 70px; }
+  .header .search-bar {
     width: 324px;
     padding-left: 111px;
     padding-right: 30px; }
-    .header .seacrh-bar .search-input {
+    .header .search-bar .search-input {
       position: relative; }
-    .header .seacrh-bar input {
+    .header .search-bar input {
       width: 183px;
       height: 33px;
       padding: 11px 20px;
@@ -90,14 +90,16 @@
               border-radius: 10px;
       font-family: "Open Sans";
       font-weight: 400; }
-    .header .seacrh-bar .search-btn {
+    .header .search-bar .search-btn {
       position: absolute;
       top: 10px;
       right: 20px; }
   .header .language, .header .username {
     width: 185px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px; }
     .header .language .dropdown, .header .username .dropdown {
       display: -webkit-box;
       display: -webkit-flex;
@@ -127,7 +129,8 @@
   .header .username {
     width: 215px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    border: 0 !important; }
 
 .header-menu-item {
   height: 18px;
@@ -177,6 +180,9 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
 
+/*
+* Left menu css
+ */
 .left-menu {
   position: fixed;
   top: 0;
@@ -207,23 +213,44 @@
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-    .left-menu .left-menu-item .contracts:hover {
+    .left-menu .left-menu-item .menu-link-item {
+      width: 100%;
+      position: relative; }
+    .left-menu .left-menu-item .contracts {
       color: #f85567; }
-    .left-menu .left-menu-item .inventory:hover {
+    .left-menu .left-menu-item .inventory {
       color: #d00fb1; }
-    .left-menu .left-menu-item .document-management:hover {
+    .left-menu .left-menu-item .document-management {
       color: #32b092; }
-    .left-menu .left-menu-item .meetings:hover {
+    .left-menu .left-menu-item .meetings {
       color: #f8755f; }
-    .left-menu .left-menu-item .my-company:hover {
+    .left-menu .left-menu-item .my-company {
       color: #3bbdd4; }
-    .left-menu .left-menu-item .clients:hover {
+    .left-menu .left-menu-item .clients {
       color: #97cf4a; }
-    .left-menu .left-menu-item .suppliers:hover {
+    .left-menu .left-menu-item .suppliers {
       color: #339ac8; }
-    .left-menu .left-menu-item .payroll:hover {
+    .left-menu .left-menu-item .payroll {
       color: #f9a159; }
-    .left-menu .left-menu-item .human-resources:hover {
+    .left-menu .left-menu-item .human-resources {
+      color: #face1e; }
+    .left-menu .left-menu-item .contracts-link:hover {
+      color: #f85567; }
+    .left-menu .left-menu-item .inventory-link:hover {
+      color: #d00fb1; }
+    .left-menu .left-menu-item .document-management-link:hover {
+      color: #32b092; }
+    .left-menu .left-menu-item .meetings-link:hover {
+      color: #f8755f; }
+    .left-menu .left-menu-item .my-company-link:hover {
+      color: #3bbdd4; }
+    .left-menu .left-menu-item .clients-link:hover {
+      color: #97cf4a; }
+    .left-menu .left-menu-item .suppliers-link:hover {
+      color: #339ac8; }
+    .left-menu .left-menu-item .payroll-link:hover {
+      color: #f9a159; }
+    .left-menu .left-menu-item .human-resources-link:hover {
       color: #face1e; }
     .left-menu .left-menu-item i {
       margin-right: 17px; }
@@ -232,6 +259,26 @@
       margin-left: 20px; }
     .left-menu .left-menu-item .submenu-links {
       padding: 20px 0 20px 60px; }
+      .left-menu .left-menu-item .submenu-links li {
+        margin-bottom: 25px;
+        position: relative; }
+
+.menu-active-link {
+  /*&:after {
+    left: -9px;
+    color: $primary-fff;
+  }*/ }
+  .menu-active-link:after, .menu-active-link:before {
+    content: "\f0d9";
+    font-family: fontAwesome;
+    width: 7px;
+    height: 60px;
+    font-size: 32px;
+    color: #eeeeee;
+    position: absolute;
+    top: -13px;
+    right: 4px;
+    /* Projects the arrow tot he direction that we want */ }
 
 #mobile-menu {
   width: 100%;
@@ -259,6 +306,27 @@
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+    #mobile-menu .left-menu-item .menu-link-item {
+      width: 100%;
+      position: relative; }
+    #mobile-menu .left-menu-item .contracts {
+      color: #f85567; }
+    #mobile-menu .left-menu-item .inventory {
+      color: #d00fb1; }
+    #mobile-menu .left-menu-item .document-management {
+      color: #32b092; }
+    #mobile-menu .left-menu-item .meetings {
+      color: #f8755f; }
+    #mobile-menu .left-menu-item .my-company {
+      color: #3bbdd4; }
+    #mobile-menu .left-menu-item .clients {
+      color: #97cf4a; }
+    #mobile-menu .left-menu-item .suppliers {
+      color: #339ac8; }
+    #mobile-menu .left-menu-item .payroll {
+      color: #f9a159; }
+    #mobile-menu .left-menu-item .human-resources {
+      color: #face1e; }
     #mobile-menu .left-menu-item .contracts:hover {
       color: #f85567; }
     #mobile-menu .left-menu-item .inventory:hover {
@@ -284,6 +352,9 @@
       margin-left: 20px; }
     #mobile-menu .left-menu-item .submenu-links {
       padding: 20px 0 20px 60px; }
+      #mobile-menu .left-menu-item .submenu-links li {
+        margin-bottom: 25px;
+        position: relative; }
 
 /*
 * Footer css
@@ -311,147 +382,108 @@
   position: fixed;
   bottom: 0; }
 
-.payroll-main {
-  background-color: #fff;
-  margin-bottom: 23px; }
-  .payroll-main .payroll-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: #fbfbfb;
-    padding: 24px 28px 19px 28px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    margin-bottom: 28px; }
-  .payroll-main .payroll-table-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 28px; }
-    .payroll-main .payroll-table-header .btn-default {
-      border-color: #fff !important;
-      background-color: #fff !important; }
-      .payroll-main .payroll-table-header .btn-default:hover {
-        background-color: #fff; }
-      .payroll-main .payroll-table-header .btn-default .open > .dropdown-toggle.btn-default {
-        background-color: #fff;
-        color: #333333; }
-  .payroll-main .payroll-table-controls {
-    color: #a1a1a1; }
-  .payroll-main .main-table {
-    padding: 0 28px;
-    margin-top: 30px; }
-  .payroll-main .btn {
-    padding-left: 0px; }
-  .payroll-main .table-client-name {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .payroll-main th {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600; }
-  .payroll-main td {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400; }
+/*
+* Payroll css
+ */
+.payroll-page-stripe {
+  height: 18px;
+  background-color: #f9a159; }
 
-.main-table-footer {
-  /*display: flex;
-  justify-content: space-between;
+.payroll-section .table-filter-left span {
+  margin: 0 5px; }
+
+.payroll-section .main-table-select {
+  border: 0;
+  margin: 0;
+  color: #333333; }
+
+/*.payroll-header{
+  display: flex;
   align-items: center;
-  padding: 0 28px;*/ }
-  .main-table-footer .print {
-    color: #fff;
-    padding: 10px 5px;
-    background-color: #ababab;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700; }
-  .main-table-footer .payroll-pagination {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: inherit;
-    -webkit-justify-content: inherit;
-        -ms-flex-pack: inherit;
-            justify-content: inherit;
-    width: inherit; }
-    .main-table-footer .payroll-pagination p {
-      margin-right: 39px;
-      color: #707070; }
-    .main-table-footer .payroll-pagination a {
-      color: #333333; }
+  justify-content: space-between;
+  background-color: $gray-7;
+  padding: 24px 28px 19px 28px;
+  font-family: "Roboto", sans-serif ;
+  font-weight: 700;
+  margin-bottom: 28px;
+}  */
+.payroll-calendar .calendar-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .payroll-calendar .calendar-controls h4 {
+    margin-right: 40px; }
+  .payroll-calendar .calendar-controls i:first-child {
+    margin-right: 10px; }
 
-.payroll-footer-list {
+.main-table {
+  padding: 0 28px;
+  margin-top: 30px; }
+
+.table-client-name {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-bottom: 30px; }
-  .payroll-footer-list li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: #fff; }
-    .payroll-footer-list li div {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      padding: 31px; }
-    .payroll-footer-list li h2 {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.main-table-footer .print {
+  color: #fff;
+  padding: 10px 5px;
+  background-color: #ababab;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.main-table-footer .payroll-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  width: inherit; }
+  .main-table-footer .payroll-pagination p {
+    margin-right: 39px;
+    color: #707070; }
+  .main-table-footer .payroll-pagination a {
+    color: #333333; }
+
+.payroll-forms .todo-items-footer .todo-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .payroll-forms .todo-items-footer .todo-search input {
+    margin-left: 10px;
+    width: 600px; }
+
+.payroll-alerts .alerts-window {
+  width: 100%;
+  height: 570px; }
+
+.payroll-conduct .main-table-filter {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .header-sign-in {
   margin-left: 0px; }
@@ -658,17 +690,14 @@
   height: 18px;
   background-color: #f8755f; }
 
-.meetings-main {
-  margin-bottom: 20px; }
-  .meetings-main .main-table-select {
-    margin: 0 15px 0 15px; }
-
 .meetings-bottom, .members-bottom {
   margin-bottom: 61px; }
   .meetings-bottom .create-meeting, .members-bottom .create-meeting {
     background-color: #fff; }
   .meetings-bottom .form-horizontal, .members-bottom .form-horizontal {
-    padding: 0 28px 19px 28px; }
+    padding: 0 28px 10px 28px; }
+  .meetings-bottom .main-table-select, .members-bottom .main-table-select {
+    margin: 0; }
   .meetings-bottom .form-group, .members-bottom .form-group {
     display: -webkit-box;
     display: -webkit-flex;
@@ -713,6 +742,11 @@
   height: 18px;
   background-color: #339ac8; }
 
+.suppliers-bottom {
+  margin-bottom: 20px; }
+  .suppliers-bottom .alerts-window {
+    width: 100%; }
+
 /*
 * Inventory page and subpages css
  */
@@ -723,11 +757,12 @@
 .inventory-bottom {
   margin-bottom: 20px; }
 
-.inventory-main {
-  margin-bottom: 20px; }
-  .inventory-main .main-table-select {
-    margin: 0 10px; }
-
+/*.inventory-main{
+  margin-bottom: 20px;
+  .main-table-select{
+    margin: 0 10px;
+  }
+}*/
 .inventory-purchase-orders .todo-new-item form {
   width: 100%; }
 
@@ -743,7 +778,6 @@
   height: 18px; }
 
 .document-management-main .main-table-select {
-  margin-left: 11px;
   width: 124px; }
 
 .document-management-footer {
@@ -867,12 +901,6 @@
     .my-company-info .my-company-info-left .tabs-left {
       background-color: #f4f4f4;
       padding-top: 0; }
-  .my-company-info .my-company-info-right {
-    width: 100%;
-    height: 100%;
-    padding: 28px;
-    font-family: "Open Sans", sans-serif;
-    color: #d0d0d0; }
 
 .my-company-users {
   background-color: #fff;
@@ -889,6 +917,57 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.contracts-page-stripe {
+  height: 18px;
+  background-color: #f85567; }
+
+.contracts-bottom {
+  margin-bottom: 26px; }
+  .contracts-bottom .calendar-wrapper {
+    padding-bottom: 0; }
+  .contracts-bottom .alerts-window {
+    width: 100%; }
+    .contracts-bottom .alerts-window .add-alert-btn {
+      margin-top: 8px; }
+
+.human-resources-page-stripe {
+  background-color: #face1e;
+  height: 18px; }
+
+.human-resources-alerts .alerts-window {
+  width: 100%;
+  height: 500px; }
+  .human-resources-alerts .alerts-window .add-alert-btn {
+    width: 50%; }
+
+.human-resources-main .todo-items-footer .todo-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .human-resources-main .todo-items-footer .todo-search input {
+    margin-left: 10px;
+    width: 600px; }
+
+.human-resources-main .calendar-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .human-resources-main .calendar-controls h4 {
+    margin-right: 20px; }
+  .human-resources-main .calendar-controls i:first-child {
+    margin-right: 10px; }
+
+.human-resources-bottom {
+  margin-bottom: 26px; }
+  .human-resources-bottom .alerts-window {
+    width: 100%; }
 
 body {
   position: relative;
@@ -937,6 +1016,9 @@ ul {
 .mm-menu .mm-search input {
   background: #eeeeee; }
 
+.panel {
+  border: 0; }
+
 input.form-control, input.form-control:focus {
   border: none;
   box-shadow: none;
@@ -950,6 +1032,9 @@ input.form-control, input.form-control:focus {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   padding-left: 0; }
+
+.breadcrumb > li + li:before {
+  content: '-'; }
 
 .panel-body {
   padding: 0; }
@@ -1012,7 +1097,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
   border-color: transparent; }
 
 .section-background {
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 26px; }
 
 /*
 * Tables css
@@ -1034,7 +1120,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
   padding: 23px 28px 19px 28px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eeeeee; }
 
 .main-table-controls {
   color: #a1a1a1; }
@@ -1045,7 +1132,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
   border: 1px solid #eeeeee;
   background-color: #fff;
   -webkit-border-radius: 4px;
-          border-radius: 4px; }
+          border-radius: 4px;
+  margin: 0 10px; }
 
 .main-table-filter {
   display: -webkit-box;
@@ -1062,7 +1150,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
           justify-content: space-between;
   padding: 0 28px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #707070; }
 
 .table-filter-left {
   display: -webkit-box;
@@ -1188,8 +1277,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
   margin-bottom: 26px; }
 
 /*
-  * End Tables css
-   */
+* End Tables css
+ */
 /*
 * Alert window css
  */
@@ -1206,6 +1295,33 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
     .alerts-window .alerts-header h2 {
       font-weight: 600;
       margin: 0px 0px 10px 0; }
+    .alerts-window .alerts-header .alerts-select {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .alerts-window .alerts-header .alerts-select select {
+        background-color: #d0d0d0;
+        color: #fff;
+        padding: 10px;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        border: 1px solid #fff; }
+    .alerts-window .alerts-header .alerts-dates {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .alerts-window .alerts-header .alerts-dates select:first-child {
+        margin-right: 5px; }
+  .alerts-window .contracts-alert-header {
+    margin-bottom: 10px; }
+  .alerts-window .contracts-alert-list {
+    margin-top: 0; }
   .alerts-window .alerts-list {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -1226,6 +1342,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
       background-color: #ababab;
       padding: 17px 23px 9px 23px;
       margin-bottom: 3px; }
+  .alerts-window .contracts-alert-list {
+    margin-top: 0; }
   .alerts-window .alert-list-left {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1247,7 +1365,24 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
   .alerts-window .human-resources-alert {
     background-color: #face1e; }
   .alerts-window .meetings-alert {
+    background-color: #f8755f; }
+  .alerts-window .suppliers-alert {
+    background-color: #339ac8; }
+  .alerts-window .clients-alert {
+    background-color: #97cf4a; }
+  .alerts-window .contracts-alert {
     background-color: #f85567; }
+  .alerts-window .payroll-alert {
+    background-color: #f9a159; }
+  .alerts-window .alert-window-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .add-alert-btn {
   border: 2px solid #ababab;
@@ -1256,13 +1391,187 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
   width: 100%;
   -webkit-border-radius: 0;
           border-radius: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   color: #fff !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 600; }
 
 /*
 * end alerts window
+ */
+/*
+*  Calendar css
+ */
+.calendar-wrapper {
+  padding-bottom: 20px; }
+
+.calendar-controls a i {
+  padding: 6px 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #ebebeb;
+  font-size: 10px;
+  color: #333333; }
+  .calendar-controls a i:hover {
+    color: #fff;
+    background-color: #d0d0d0; }
+
+.calendar-body {
+  padding: 0 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+  .calendar-body .old-date {
+    color: #9f9f9f;
+    padding: 3px 8px; }
+  .calendar-body .calendar-day {
+    font-weight: 600;
+    color: #333333; }
+  .calendar-body .table > tbody > tr > td {
+    padding: 10px; }
+  .calendar-body .date {
+    padding: 3px 8px; }
+  .calendar-body .date:hover {
+    background-color: #d0d0d0;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    color: #fff !important; }
+
+.attendance-calendar {
+  text-align: center;
+  margin-top: 30px; }
+  .attendance-calendar .table > tbody > tr > td {
+    padding: 14px 0px 15px 0;
+    position: relative; }
+
+.vacation-day, .absent-day {
+  position: absolute;
+  bottom: 9px;
+  height: 10px;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  background-color: #32b092;
+  font-size: 9px; }
+
+.absent-day {
+  position: absolute;
+  bottom: 0;
+  background-color: #df3432; }
+
+.attendance-calendar-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 28px; }
+
+/*
+* End calendar css
+ */
+/*
+* statistics section
+ */
+.statistics-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 30px; }
+  .statistics-list li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    width: 290px; }
+    .statistics-list li div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      padding: 31px; }
+    .statistics-list li h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700; }
+
+/*
+* end statistics
+ */
+/*
+* absent & vacation form css
+ */
+.vacation-form, .absent-form {
+  padding: 0 28px 8px 28px;
+  font-family: "Open Sans", sans-serif; }
+  .vacation-form .main-table-select, .absent-form .main-table-select {
+    margin: 0;
+    width: 100%; }
+  .vacation-form textarea, .absent-form textarea {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+
+.vacation-form .date-select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.vacation-form .main-table-select:first-child {
+  margin-right: 5px; }
+
+.absent-form {
+  margin-bottom: 26px; }
+
+.vacation-sign, .absent-sing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600; }
+  .vacation-sign .vacation-color, .vacation-sign .absent-color, .absent-sing .vacation-color, .absent-sing .absent-color {
+    padding: 10px 6px;
+    background-color: #df3432;
+    margin-right: 4px; }
+
+.vacation-sign {
+  margin-right: 40px; }
+  .vacation-sign .vacation-color {
+    background-color: #32b092; }
+
+/*
+*
  */
 .main-items-block {
   background-color: #fff; }
@@ -1278,6 +1587,10 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #f8f8f8;
     padding: 17px 23px 9px 23px;
     margin-bottom: 3px;
@@ -1320,7 +1633,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
     padding: 10px 25px; }
   .todo-items-footer .add-todo {
     background-color: #d0d0d0;
-    padding: 10px 45px; }
+    padding: 10px 45px;
+    color: #fff; }
   .todo-items-footer input {
     height: 38px;
     padding-left: 10px;
@@ -1328,8 +1642,6 @@ input[type="checkbox"]:disabled:checked:after, .checkbox-inline input[type="chec
     -webkit-border-radius: 20px;
             border-radius: 20px;
     background-color: #f8f8f8;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
     width: 277px;
     color: #ababab; }
 
@@ -1391,45 +1703,166 @@ input {
 .nav > li > a {
   padding-left: 30px; }
 
+.tab-controls {
+  width: 150px;
+  height: 100%;
+  background-color: #d0d0d0; }
+  .tab-controls .tabs-left {
+    background-color: #f4f4f4;
+    padding-top: 0; }
+
+.tabs-wrapper {
+  height: 400px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid #e4e4e4; }
+
+.tab-main-content {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  font-family: "Open Sans", sans-serif;
+  color: #d0d0d0; }
+
 /*
 * End tabs css settings
  */
 /*
+* info user, info suppliers css
+ */
+.info-block-wrapper {
+  height: 400px;
+  margin-bottom: 20px; }
+  .info-block-wrapper .table-header {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 0; }
+  .info-block-wrapper .info-block-main {
+    padding: 0 45px 45px 45px;
+    color: #707070; }
+
+.social-links {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.info-block-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px; }
+  .info-block-logo .user-picture {
+    position: relative; }
+    .info-block-logo .user-picture img {
+      width: 100px;
+      height: 100px;
+      border: 4px solid #ababab; }
+    .info-block-logo .user-picture .user-picture-settings {
+      position: absolute;
+      bottom: 10px;
+      left: 35px;
+      color: #ababab; }
+      .info-block-logo .user-picture .user-picture-settings a:first-child {
+        margin-right: 5px; }
+
+/*
 * Screen sizes styles
  */
 @media screen and (max-width: 1620px) {
-  .header .seacrh-bar {
+  .header .search-bar {
     width: 224px;
     padding-left: 11px;
     padding-right: 10px; }
-    .header .seacrh-bar .search-btn {
+    .header .search-bar .search-btn {
       right: 35px; }
   .header .language, .header .username {
     width: 155px; }
   .header .username {
     width: 170px; }
-  .header .header-controls .banner {
+  .header .banner-container {
+    margin-left: 30px; }
+  .header .banner {
     width: 490px;
-    height: 91px; } }
+    height: 91px; }
+  .payroll-conduct .main-table-footer {
+    padding-bottom: 28px; }
+  .payroll-conduct .pagination {
+    margin: 0; }
+  .payroll-conduct .main-table-pagination {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .human-resources-bottom .todo-items-footer input {
+    width: 100%; } }
 
 @media screen and (max-width: 1525px) {
-  .payroll-footer-list {
+  .statistics-list {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .payroll-footer-list li {
+    .statistics-list li {
       margin: 0 10px 10px 10px; }
   .todo-items-footer .add-todo, .todo-items-footer .select-all-todo {
     padding: 10px 15px; }
   .todo-items-footer .add-todo {
     padding: 10px 35px; }
   .todo-items-footer input {
-    width: 100%; } }
+    width: 100%; }
+  .alerts-window .alerts-header .alerts-select {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .alerts-window .alerts-header .alerts-dates {
+    margin-bottom: 5px; }
+  .human-resources-bottom .main-table-select {
+    padding: 0; }
+  .human-resources-bottom .todo-items-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .human-resources-bottom .todo-items-footer input {
+      margin: 10px 0; } }
 
 @media screen and (max-width: 1330px) {
   .header {
     margin-left: 220px; }
+    .header .banner {
+      width: 100%; }
   .header-sign-in, .header-welcome {
     margin-left: 0; }
   .left-menu {
@@ -1438,8 +1871,8 @@ input {
       padding-left: 5px; }
   .content-main-section {
     margin-left: 240px; }
-  .banner {
-    display: none; } }
+  .payroll-conduct .main-table-search input {
+    width: 100%; } }
 
 @media screen and (max-width: 1199px) {
   .main-table-footer .main-table-pagination {
@@ -1481,6 +1914,17 @@ input {
   .inventory-footer {
     position: relative;
     margin-top: 20px; }
+  .alerts-window .alerts-list li {
+    padding-left: 7px;
+    padding-right: 7px; }
+  .alerts-window .alert-time {
+    margin-right: 10px; }
+  .contracts-bottom .table-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .company-bottom-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1491,7 +1935,53 @@ input {
       width: 100%; }
     .company-bottom-wrapper .my-company-users {
       width: 100%;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .payroll-forms .todo-items-footer .todo-search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .payroll-forms .todo-items-footer .todo-search button, .payroll-forms .todo-items-footer .todo-search input {
+      width: 100%;
+      margin-left: 0; }
+  .human-resources-main .todo-items-footer .todo-search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .human-resources-main .todo-items-footer .todo-search button, .human-resources-main .todo-items-footer .todo-search input {
+      width: 100%;
+      margin-left: 0; }
+  .payroll-conduct .main-table-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .payroll-conduct .main-table-seacrh {
+    width: 100%; }
+    .payroll-conduct .main-table-seacrh input {
+      width: 100%; }
+  .payroll-conduct .table-filter-left {
+    margin-bottom: 5px; }
+  .meetings-bottom .calendar-wrapper {
+    padding-bottom: 0px; }
+  .meetings-bottom .form-horizontal {
+    padding-bottom: 5px; }
+    .meetings-bottom .form-horizontal .form-group:last-child {
+      margin-bottom: 0; }
+  .meetings-bottom .main-table-select {
+    padding: 0 2px; } }
+
+@media screen and (min-width: 992px) {
+  #mobile-menu {
+    display: none !important; } }
 
 @media screen and (max-width: 991px) {
   .header {
@@ -1503,8 +1993,14 @@ input {
               justify-content: space-between; }
   .content-main-section {
     margin-left: 0; }
-  #mobile-menu {
-    width: 100%; }
+  .footer-clients {
+    position: fixed;
+    bottom: 0; }
+  /*#mobile-menu{
+    width: 100%;
+  }*/
+  #left-menu {
+    display: none !important; }
   .header-sign-in .banner-sign-in img {
     width: 500px;
     height: 91px; }
@@ -1596,8 +2092,6 @@ input {
     margin-top: 10px; }
   #close-menu {
     display: none; }
-  .main-items-block {
-    margin-bottom: 20px; }
   .todo-new-item form {
     width: 100%; }
   .document-control-top {
@@ -1619,12 +2113,39 @@ input {
     display: flex;
     margin-bottom: 10px; }
   .document-control-bottom textarea {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .payroll-alerts .alerts-window {
+    height: 100%;
+    margin-bottom: 26px; }
+  .human-resources-main .calendar-wrapper .table-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .human-resources-main .calendar-wrapper .table-header .calendar-controls {
+      margin-top: 10px; }
+  .payroll-calendar .calendar-wrapper .table-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .payroll-calendar .calendar-wrapper .table-header .calendar-controls {
+      margin-top: 10px; }
+  .human-resources-bottom .alerts-window {
+    margin-bottom: 20px; }
+  .contracts-bottom .alerts-window {
+    margin-bottom: 20px; }
+    .contracts-bottom .alerts-window:last-child {
+      margin-bottom: 0; }
+  .meetings-bottom .form-horizontal {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 550px) {
   /*.mm-search input {
-  height: 50px;
-}*/
+    height: 50px;
+  }*/
   #close-menu {
     display: inherit; }
   .mm-navbars-top {
@@ -1715,4 +2236,25 @@ input {
     padding: 5px; }
   .alerts-window .alert-time {
     padding: 2px;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .suppliers-details-section .tabs-wrapper {
+    display: none; }
+  .tabs-wrapper {
+    height: 100%; }
+  .human-resources-main .tab-controls {
+    width: 100px;
+    font-size: 12px; }
+    .human-resources-main .tab-controls .nav > li > a {
+      padding-left: 5px; }
+  .footer-clients {
+    position: relative; }
+  .statistics-list div {
+    text-align: center; }
+  .statistics-list h2 {
+    font-size: 20px; }
+  .document-management-main .table-filter-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }

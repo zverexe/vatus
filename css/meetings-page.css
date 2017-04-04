@@ -5,17 +5,14 @@
   height: 18px;
   background-color: #f8755f; }
 
-.meetings-main {
-  margin-bottom: 20px; }
-  .meetings-main .main-table-select {
-    margin: 0 15px 0 15px; }
-
 .meetings-bottom, .members-bottom {
   margin-bottom: 61px; }
   .meetings-bottom .create-meeting, .members-bottom .create-meeting {
     background-color: #fff; }
   .meetings-bottom .form-horizontal, .members-bottom .form-horizontal {
-    padding: 0 28px 19px 28px; }
+    padding: 0 28px 10px 28px; }
+  .meetings-bottom .main-table-select, .members-bottom .main-table-select {
+    margin: 0; }
   .meetings-bottom .form-group, .members-bottom .form-group {
     display: -webkit-box;
     display: -webkit-flex;

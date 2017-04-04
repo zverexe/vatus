@@ -25,7 +25,7 @@
                     </a>
                     <div id="mobile-menu">
                         <div class="mobile-left-menu-wrapper"  id="accordion">
-                            <div class="mobile-username visible-xs visible-sm">
+                            <div class="mobile-username">
                                 <div class="dropdown">
                                     <div class="user-logo">
                                         <img src="img/user-logo.png" alt="">
@@ -42,15 +42,17 @@
                                 </div>
                             </div>
                             <div class="left-menu-item">
-                                <div class="menu-link  my-company">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-m" class="left-menu-link">
-                                        <i class="fa fa-tachometer" aria-hidden="true"></i>My Company</a>
-                                </div>
-
+                                <a class=""  href="my-company.html">
+                                    <div class="menu-link  my-company-link">
+                                        <div class="menu-link-item">
+                                            <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo-m" class="left-menu-link">
-                                    <div class="menu-link  clients">
+                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo-m">
+                                    <div class="menu-link clients-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-th-large" aria-hidden="true"></i>Clients
                                         </div>
@@ -59,13 +61,14 @@
                                 </a>
                                 <div id="collapseTwo-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li><a href="">Client Details</a></li>
+                                        <li class="clients-link"><a href="clients-main.html">Clients</a></li>
+                                        <li class="clients-link"><a href="client-details.html">Client Detalis</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree-m" class="left-menu-link">
-                                    <div class="menu-link suppliers">
+                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree-m">
+                                    <div class="menu-link suppliers-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
                                         </div>
@@ -74,13 +77,14 @@
                                 </a>
                                 <div id="collapseThree-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li><a href="">Supplier Details</a></li>
+                                        <li class="suppliers-link"><a href="suppliers.html">Suppliers</a></li>
+                                        <li class="suppliers-link"><a href="suppliers-detail.html">Supplier Details</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour-m" class="left-menu-link">
-                                    <div class="menu-link human-resources">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour-m">
+                                    <div class="menu-link human-resources-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
                                         </div>
@@ -89,19 +93,20 @@
                                 </a>
                                 <div id="collapseFour-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li><a href="">Employee Details</a></li>
-                                        <li><a href="">Absenteeism</a></li>
-                                        <li><a href="">Resumes</a></li>
-                                        <li><a href="">Vacation</a></li>
-                                        <li><a href="">Documents</a></li>
-                                        <li><a href="">Forms</a></li>
-                                        <li><a href="">Alerts</a></li>
+                                        <li class="human-resources-link"><a href="human-resources.html">Human Resources</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-employee-details.html">Employee Details</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-adsenteeism.html">Absenteeism</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-resumes.html">Resumes</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-vacation.html">Vacation</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-documents.html">Documents</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-forms.html">Forms</a></li>
+                                        <li class="human-resources-link"><a href="human-resources-alerts.html">Alerts</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen-m" class="left-menu-link">
-                                    <div class="menu-link payroll">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen-m">
+                                    <div class="menu-link payroll-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-table" aria-hidden="true"></i>Payroll
                                         </div>
@@ -110,54 +115,54 @@
                                 </a>
                                 <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li><a href="">Employee Details</a></li>
-                                        <li><a href="">Absenteeism</a></li>
-                                        <li><a href="">Resumes</a></li>
-                                        <li><a href="">Vacation</a></li>
-                                        <li><a href="">Documents</a></li>
-                                        <li><a href="">Forms</a></li>
-                                        <li><a href="">Alerts</a></li>
+                                        <li class="payroll-link "><a href="index.html">Payroll</a></li>
+                                        <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
+                                        <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
+                                        <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
+                                        <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
+                                        <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="left-menu-item">
-                                <a href="">
-                                    <div class="menu-link contracts">
+                                <a href="contracts.html">
+                                    <div class="menu-link contracts-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-server" aria-hidden="true"></i>Contracts
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix-m" class="left-menu-link">
-                                    <div class="menu-link inventory">
+                            <div class="left-menu-item ">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix-m">
+                                    <div class="menu-link inventory-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
                                         </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                                     </div>
                                 </a>
-                                <div id="collapseSix-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li><a href="">New Item</a></li>
-                                        <li><a href="">Purchase Order</a></li>
-                                        <li><a href="">Invoices</a></li>
+                                <div id="collapseSix-m" class="panel-collapse collapse in collapse-menu ">
+                                    <ul class="list-unstyled submenu-links ">
+                                        <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
+                                        <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
+                                        <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
+                                        <li class="inventory-link menu-active-link inventory"><a href="inventory-invoices.html">Invoices</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="left-menu-item">
-                                <a href="" class="left-menu-link">
-                                    <div class="menu-link document-management">
+                                <a href="document-management.html">
+                                    <div class="menu-link document-management-link">
                                         <div class="menu-link-item">
                                             <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="left-menu-item ">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight-m" class="left-menu-link">
-                                    <div class="menu-link meetings">
+                            <div class="left-menu-item">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight-m">
+                                    <div class="menu-link meetings-link">
                                         <div class="menu-link-item ">
                                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                                         </div>
@@ -166,7 +171,8 @@
                                 </a>
                                 <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li class="meetings"><a href="">Members</a></li>
+                                        <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
+                                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -178,24 +184,17 @@
                                         </div>
                                     </div>
                                 </a>
-
                             </div>
                             <div class="left-menu-item">
-                                <div class="menu-link ">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven-m" class="left-menu-link">
-                                        <i class="fa fa-lock" aria-hidden="true"></i>Login</a>
-                                </div>
-                                <div id="collapseEleven-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li><a href="">First item</a></li>
-                                        <li><a href="">Second item</a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                    </ul>
-                                </div>
+                                <a href="">
+                                    <div class="menu-link">
+                                        <div class="menu-link-item">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>Login
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="mobile-language visible-xs visible-sm">
+                            <div class="mobile-language">
                                 <div class="dropup">
                                     <div class="language-logo">
                                         <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
@@ -212,15 +211,14 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="mobile-logo visible-xs visible-sm">
-                    <img src="img/logo.png" alt="">
+                    <a href="welcome-page.html"><img src="img/logo.png" alt=""></a>
                 </div>
                 <ul class="list-unstyled list-inline header-controls hidden-xs hidden-sm">
-                    <li class="hidden-xs"><img src="img/header-image.png" class="banner" alt=""></li>
-                    <li class="seacrh-bar hidden-xs">
+                    <li class="banner-container hidden-md"><img src="img/header-image.png" class="banner" alt=""></li>
+                    <li class="search-bar hidden-xs">
                         <div class="search-input"><input type="text"   placeholder="Search" >
                             <span class="glyphicon glyphicon-search search-btn"></span>
                         </div>
@@ -269,10 +267,10 @@
         <div class="col-sm-12">
             <ol class="breadcrumb">
                 <li>
-                    <a href="#">Product Review</a>
+                    <a href="#">Home</a>
                 </li>
-                <li><a href="#">Cleaners</a></li>
-                <li class="active">Mizon All in One Snail and Bee Venom</li>
+                <li><a href="#">Inventory</a></li>
+                <li class="active">Invoices</li>
             </ol>
         </div>
     </div>
@@ -330,7 +328,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -344,7 +342,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -358,7 +356,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -372,7 +370,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -386,7 +384,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -400,7 +398,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -414,7 +412,7 @@
                             <input name="check" type="checkbox" value="">
                             <p>
                                 <span class="todo-item-title">Alert 1</span>
-                                – Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                – Lorem ipsum dolor sit amet
                             </p>
                         </div>
                         <div class="todo-item-controls">
@@ -427,7 +425,7 @@
                 <div class="todo-items-footer">
                     <button type="button" class="btn select-all-todo">Select All</button>
                     <div class="todo-search">
-                        <input type="text"placeholder="Search here...">
+                        <input type="text" placeholder="Search here...">
                     </div>
                     <button type="button" class="btn add-todo">Add</button>
                 </div>
@@ -435,30 +433,26 @@
         </div>
     </div>
 </div>
-
-
-
 <div class="left-menu visible-md visible-lg">
     <div class="brand">
-        <a href="">
+        <a href="welcome-page.html">
             <img src="img/logo.png" alt="">
         </a>
     </div>
     <div class="left-menu-wrapper accordion" id="accordion1">
         <div class="panel">
             <div class="left-menu-item">
-                <a  class="left-menu-link" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
-                    <div class="menu-link  my-company">
+                <a class=""  href="my-company.html">
+                    <div class="menu-link  my-company-link">
                         <div class="menu-link-item">
                             <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
                         </div>
                     </div>
                 </a>
-
             </div>
             <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" class="left-menu-link">
-                    <div class="menu-link clients">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                    <div class="menu-link clients-link">
                         <div class="menu-link-item">
                             <i class="fa fa-th-large" aria-hidden="true"></i>Clients
                         </div>
@@ -467,13 +461,14 @@
                 </a>
                 <div id="collapseTwo" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li><a href="">Client Detalis</a></li>
+                        <li class="clients-link  "><a href="clients-main.html">Clients</a></li>
+                        <li class="clients-link"><a href="client-details.html">Client Detalis</a></li>
                     </ul>
                 </div>
             </div>
             <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" class="left-menu-link">
-                    <div class="menu-link suppliers">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                    <div class="menu-link suppliers-link">
                         <div class="menu-link-item">
                             <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
                         </div>
@@ -482,15 +477,14 @@
                 </a>
                 <div id="collapseThree" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li><a href="">Supplier Details</a></li>
-
+                        <li class="suppliers-link"><a href="suppliers.html">Suppliers</a></li>
+                        <li class="suppliers-link"><a href="suppliers-detail.html">Supplier Details</a></li>
                     </ul>
-
                 </div>
             </div>
             <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="left-menu-link">
-                    <div class="menu-link human-resources">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <div class="menu-link human-resources-link">
                         <div class="menu-link-item">
                             <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
                         </div>
@@ -499,20 +493,20 @@
                 </a>
                 <div id="collapseFour" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li class="human-resources"><a href="">Employee Details</a></li>
-                        <li class="human-resources"><a href="">Absenteeism</a></li>
-                        <li class="human-resources"><a href="">Resumes</a></li>
-                        <li class="human-resources"><a href="">Vacation</a></li>
-                        <li class="human-resources"><a href="">Documents</a></li>
-                        <li class="human-resources"><a href="">Forms</a></li>
-                        <li class="human-resources"><a href="">Alerts</a></li>
-
+                        <li class="human-resources-link"><a href="human-resources.html">Human Resources</a></li>
+                        <li class="human-resources-link"><a href="human-resources-employee-details.html">Employee Details</a></li>
+                        <li class="human-resources-link"><a href="human-resources-adsenteeism.html">Absenteeism</a></li>
+                        <li class="human-resources-link"><a href="human-resources-resumes.html">Resumes</a></li>
+                        <li class="human-resources-link"><a href="human-resources-vacation.html">Vacation</a></li>
+                        <li class="human-resources-link"><a href="human-resources-documents.html">Documents</a></li>
+                        <li class="human-resources-link"><a href="human-resources-forms.html">Forms</a></li>
+                        <li class="human-resources-link"><a href="human-resources-alerts.html">Alerts</a></li>
                     </ul>
                 </div>
             </div>
             <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" class="left-menu-link">
-                    <div class="menu-link payroll">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                    <div class="menu-link payroll-link">
                         <div class="menu-link-item">
                             <i class="fa fa-table" aria-hidden="true"></i>Payroll
                         </div>
@@ -521,21 +515,18 @@
                 </a>
                 <div id="collapseTen" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li class="payroll"><a href="">Employee Details</a></li>
-                        <li class="payroll"><a href="">Absenteeism</a></li>
-                        <li class="payroll"><a href="">Resumes</a></li>
-                        <li class="payroll"><a href="">Vacation</a></li>
-                        <li class="payroll"><a href="">Documents</a></li>
-                        <li class="payroll"><a href="">Forms</a></li>
-                        <li class="payroll"><a href="">Alerts</a></li>
+                        <li class="payroll-link"><a href="index.html">Payroll</a></li>
+                        <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
+                        <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
+                        <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
+                        <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
+                        <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
                     </ul>
-
                 </div>
             </div>
-
             <div class="left-menu-item">
-                <a href="" class="left-menu-link">
-                    <div class="menu-link contracts">
+                <a href="contracts.html">
+                    <div class="menu-link contracts-link">
                         <div class="menu-link-item">
                             <i class="fa fa-server" aria-hidden="true"></i>Contracts
                         </div>
@@ -543,34 +534,35 @@
                 </a>
             </div>
             <div class="left-menu-item ">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="left-menu-link">
-                    <div class="menu-link inventory">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                    <div class="menu-link inventory-link">
                         <div class="menu-link-item">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
                         </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
+                <div id="collapseSix" class="panel-collapse collapse in collapse-menu ">
                     <ul class="list-unstyled submenu-links ">
-                        <li class="inventory"><a href="">New Item</a></li>
-                        <li class="inventory"><a href="">Purchase Order</a></li>
-                        <li class="inventory"><a href="">Invoices</a></li>
+                        <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
+                        <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
+                        <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
+                        <li class="inventory-link menu-active-link inventory"><a href="inventory-invoices.html">Invoices</a></li>
                     </ul>
                 </div>
             </div>
             <div class="left-menu-item">
-                <a href="" class="left-menu-link">
-                    <div class="menu-link document-management">
+                <a href="document-management.html">
+                    <div class="menu-link document-management-link">
                         <div class="menu-link-item">
                             <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="left-menu-item ">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" class="left-menu-link">
-                    <div class="menu-link meetings">
+            <div class="left-menu-item">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                    <div class="menu-link meetings-link">
                         <div class="menu-link-item ">
                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                         </div>
@@ -579,12 +571,13 @@
                 </a>
                 <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
-                        <li class="meetings"><a href="">Members</a></li>
+                        <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
+                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                     </ul>
                 </div>
             </div>
             <div class="left-menu-item">
-                <a href="" class="left-menu-link">
+                <a href="">
                     <div class="menu-link ">
                         <div class="menu-link-item">
                             <i class="fa fa-user" aria-hidden="true"></i>Profile
@@ -593,7 +586,7 @@
                 </a>
             </div>
             <div class="left-menu-item">
-                <a href="" class="left-menu-link">
+                <a href="">
                     <div class="menu-link">
                         <div class="menu-link-item">
                             <i class="fa fa-lock" aria-hidden="true"></i>Login
@@ -611,9 +604,6 @@
         </div>
     </div>
 </div>
-
-
-
 <script src="https://cdn.jsdelivr.net/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>

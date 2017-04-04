@@ -8,10 +8,11 @@
 .inventory-bottom {
   margin-bottom: 20px; }
 
-.inventory-main {
-  margin-bottom: 20px; }
-  .inventory-main .main-table-select {
-    margin: 0 10px; }
-
+/*.inventory-main{
+  margin-bottom: 20px;
+  .main-table-select{
+    margin: 0 10px;
+  }
+}*/
 .inventory-purchase-orders .todo-new-item form {
   width: 100%; }

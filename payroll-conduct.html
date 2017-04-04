@@ -112,16 +112,16 @@
                                         <div class="menu-link-item">
                                             <i class="fa fa-table" aria-hidden="true"></i>Payroll
                                         </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                                     </div>
                                 </a>
-                                <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
+                                <div id="collapseTen-m" class="panel-collapse collapse in collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li class="payroll-link"><a href="index.html">Payroll</a></li>
+                                        <li class="payroll-link "><a href="index.html">Payroll</a></li>
                                         <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
                                         <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
                                         <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
-                                        <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
+                                        <li class="payroll-link menu-active-link payroll"><a href="payroll-conduct.html">Conduct</a></li>
                                         <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
                                     </ul>
                                 </div>
@@ -168,13 +168,13 @@
                                         <div class="menu-link-item ">
                                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                                         </div>
-                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                                     </div>
                                 </a>
-                                <div id="collapseEight-m" class="panel-collapse collapse in collapse-menu ">
+                                <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
                                         <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                                        <li class="meetings-link menu-active-link meetings"><a href="meetings-members.html">Members</a></li>
+                                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                     <a href="welcome-page.html"><img src="img/logo.png" alt=""></a>
                 </div>
                 <ul class="list-unstyled list-inline header-controls hidden-xs hidden-sm">
-                    <li class="banner-container hidden-md"><img src="img/header-image.png" class="banner" alt=""></li>
+                    <li class="hidden-xs"><img src="img/header-image.png" class="banner" alt=""></li>
                     <li class="search-bar hidden-xs">
                         <div class="search-input"><input type="text"   placeholder="Search" >
                             <span class="glyphicon glyphicon-search search-btn"></span>
@@ -262,7 +262,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid meetings-page-stripe">
+<div class="container-fluid payroll-page-stripe">
 </div>
 <div class="container-fluid content-main-section">
     <div class="row">
@@ -271,18 +271,18 @@
                 <li>
                     <a href="#">Home</a>
                 </li>
-                <li><a href="#">Meetings</a></li>
-                <li class="active">Members</li>
+                <li><a href="#">Payroll</a></li>
+                <li class="active">Employee Details</li>
             </ol>
         </div>
     </div>
 </div>
-<div class="container-fluid content-main-section ">
+<div class="container-fluid content-main-section payroll-conduct">
     <div class="row">
-        <div class="col-sm-12">
-            <div class="meetings-main section-background">
+        <div class="col-sm-6">
+            <div class="main-table-wrapper ">
                 <div class="table-header">
-                    <h4 class="black-1">Members</h4>
+                    <h4 class="black-1">Conduct</h4>
                     <div class="main-table-controls">
                         <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
@@ -290,16 +290,6 @@
                     </div>
                 </div>
                 <div class="main-table-filter">
-                    <div class="table-filter-left">
-                        <p>Show</p>
-                        <select name="table-data" id="table-data" class="main-table-select">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                        </select>
-                        <p>Entries</p>
-                    </div>
                     <div class="main-table-seacrh">
                         <div class="search-input">
                             <input type="text" placeholder="Search">
@@ -313,7 +303,7 @@
                         <tr>
                             <th>
                                 <div class="row-filter">
-                                    <p>Name</p>
+                                    <p>Employee</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -326,7 +316,7 @@
                             </th>
                             <th>
                                 <div class="row-filter">
-                                    <p>Position</p>
+                                    <p>Issue</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -339,33 +329,7 @@
                             </th>
                             <th>
                                 <div class="row-filter">
-                                    <p>Email</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Status</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Add</p>
+                                    <p>Date</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -384,16 +348,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -401,16 +359,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -418,16 +370,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -435,16 +381,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -452,16 +392,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -469,16 +403,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -486,16 +414,10 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
                         <tr>
@@ -503,21 +425,56 @@
                                 John Doe
                             </td>
                             <td>
-                                Position
+                                Direct Deposit
                             </td>
                             <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
+                                01.01.17
                             </td>
                         </tr>
-
-
-
+                        <tr>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>
+                                Direct Deposit
+                            </td>
+                            <td>
+                                01.01.17
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>
+                                Direct Deposit
+                            </td>
+                            <td>
+                                01.01.17
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>
+                                Direct Deposit
+                            </td>
+                            <td>
+                                01.01.17
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>
+                                Direct Deposit
+                            </td>
+                            <td>
+                                01.01.17
+                            </td>
+                        </tr>
 
                         </tbody>
                     </table>
@@ -552,54 +509,64 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid content-main-section">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="members-bottom section-background">
+        <div class="col-sm-6">
+            <div class="section-background">
                 <div class="table-header">
-                    <h4 class="black-1">Members</h4>
+                    <h4 class="black-1">Absent</h4>
                     <div class="main-table-controls">
                         <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="add-new-member">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="member-name" class="col-sm-3 control-label">Name</label>
-                            <div class="col-sm-8 ">
-                                <input type="text" class="form-control" id="member-name" placeholder="">
-                            </div>
+                <form class="absent-form form-horizontal">
+                    <div class="form-group">
+                        <label for="absent-date" class="col-sm-3 control-label">Date</label>
+                        <div class="col-sm-5 col-lg-3">
+                            <select name="absent-date" id="absent-date" class="main-table-select">
+                                <option value="10">Date</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="member-email" class="col-sm-3 control-label">Email</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="member-email" placeholder="">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="employee" class="col-sm-3 control-label">Employee</label>
+                        <div class="col-sm-5 col-lg-3">
+                            <select name="employee" id="employee" class="main-table-select">
+                                <option value="employee">Employee</option>
+                                <option value="employee">employee</option>
+                                <option value="employee">employee</option>
+                                <option value="employee">employee</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="member-position" class="col-sm-3 control-label">Position</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="member-position" placeholder="">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="employee" class="col-sm-3 control-label">Issue</label>
+                        <div class="col-sm-5 col-lg-3">
+                            <select name="issue" id="issue" class="main-table-select">
+                                <option value="name">Issue</option>
+                                <option value="name">Name</option>
+                                <option value="name">Name</option>
+                                <option value="name">Name</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="member-user-rights" class="col-sm-3 control-label">User Rights</label>
-                            <div class="col-sm-8">
-                                <textarea name="member-user-rights" id="member-user-rights" cols="30" rows="3"></textarea>
-                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments" class="col-sm-3 control-label">Comments</label>
+                        <div class="col-sm-9">
+                            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="add-new-member" class="col-sm-3 control-label"></label>
-                            <div class="col-sm-8">
-                                <button type="submit" class="btn form-submit-btn" id="add-new-member">Submit</button>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="absent-submit" class="col-sm-3 control-label"></label>
+                        <div class="col-sm-8">
+                            <button type="submit" class="btn form-submit-btn" id="absent-submit">Submit</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -681,16 +648,16 @@
                         <div class="menu-link-item">
                             <i class="fa fa-table" aria-hidden="true"></i>Payroll
                         </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseTen" class="panel-collapse collapse  collapse-menu ">
+                <div id="collapseTen" class="panel-collapse collapse in collapse-menu ">
                     <ul class="list-unstyled submenu-links">
                         <li class="payroll-link"><a href="index.html">Payroll</a></li>
                         <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
                         <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
                         <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
-                        <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
+                        <li class="payroll-link menu-active-link payroll"><a href="payroll-conduct.html">Conduct</a></li>
                         <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
                     </ul>
                 </div>
@@ -714,7 +681,7 @@
                     </div>
                 </a>
                 <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
+                    <ul class="list-unstyled submenu-links ">
                         <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
                         <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
                         <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
@@ -737,13 +704,13 @@
                         <div class="menu-link-item ">
                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                         </div>
-                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseEight" class="panel-collapse collapse in collapse-menu ">
+                <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
                         <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                        <li class="meetings-link menu-active-link meetings"><a href="meetings-members.html">Members</a></li>
+                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                     </ul>
                 </div>
             </div>

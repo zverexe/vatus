@@ -117,7 +117,7 @@
                                 </a>
                                 <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
-                                        <li class="payroll-link"><a href="index.html">Payroll</a></li>
+                                        <li class="payroll-link "><a href="index.html">Payroll</a></li>
                                         <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
                                         <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
                                         <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
@@ -129,7 +129,7 @@
                             <div class="left-menu-item">
                                 <a href="contracts.html">
                                     <div class="menu-link contracts-link">
-                                        <div class="menu-link-item">
+                                        <div class="menu-link-item menu-active-link contracts">
                                             <i class="fa fa-server" aria-hidden="true"></i>Contracts
                                         </div>
                                     </div>
@@ -168,13 +168,13 @@
                                         <div class="menu-link-item ">
                                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                                         </div>
-                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                                     </div>
                                 </a>
-                                <div id="collapseEight-m" class="panel-collapse collapse in collapse-menu ">
+                                <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
                                     <ul class="list-unstyled submenu-links">
                                         <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                                        <li class="meetings-link menu-active-link meetings"><a href="meetings-members.html">Members</a></li>
+                                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -262,7 +262,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid meetings-page-stripe">
+<div class="container-fluid contracts-page-stripe">
 </div>
 <div class="container-fluid content-main-section">
     <div class="row">
@@ -271,18 +271,17 @@
                 <li>
                     <a href="#">Home</a>
                 </li>
-                <li><a href="#">Meetings</a></li>
-                <li class="active">Members</li>
+                <li class="active"><a href="#">Contracts</a></li>
             </ol>
         </div>
     </div>
 </div>
-<div class="container-fluid content-main-section ">
+<div class="container-fluid content-main-section contracts-main">
     <div class="row">
         <div class="col-sm-12">
-            <div class="meetings-main section-background">
+            <div class="section-background main-table-wrapper">
                 <div class="table-header">
-                    <h4 class="black-1">Members</h4>
+                    <h4 class="black-1">Clients</h4>
                     <div class="main-table-controls">
                         <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
@@ -292,17 +291,17 @@
                 <div class="main-table-filter">
                     <div class="table-filter-left">
                         <p>Show</p>
-                        <select name="table-data" id="table-data" class="main-table-select">
+                        <select name="" id="" class="main-table-select">
                             <option value="10">10</option>
                             <option value="20">20</option>
                             <option value="30">30</option>
-                            <option value="40">40</option>
+                            <option value=""></option>
                         </select>
                         <p>Entries</p>
                     </div>
                     <div class="main-table-seacrh">
                         <div class="search-input">
-                            <input type="text" placeholder="Search">
+                            <input type="text"placeholder="Search">
                             <span class="glyphicon glyphicon-search search-logo"></span>
                         </div>
                     </div>
@@ -313,7 +312,7 @@
                         <tr>
                             <th>
                                 <div class="row-filter">
-                                    <p>Name</p>
+                                    <p>Contract</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -326,7 +325,7 @@
                             </th>
                             <th>
                                 <div class="row-filter">
-                                    <p>Position</p>
+                                    <p>Start Date</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -339,7 +338,21 @@
                             </th>
                             <th>
                                 <div class="row-filter">
-                                    <p>Email</p>
+                                    <p>Expiry Date</p>
+                                    <div class="sort">
+                                        <a href="">
+                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th>
+                                <div class="row-filter">
+                                    <p>Company</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -352,20 +365,7 @@
                             </th>
                             <th>
                                 <div class="row-filter">
-                                    <p>Status</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Add</p>
+                                    <p>Contact</p>
                                     <div class="sort">
                                         <a href="">
                                             <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -381,144 +381,208 @@
                         <tbody>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                               01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
-                            </td>
-                            <td>
-                                Position
-                            </td>
-                            <td>
-                                Email
-                            </td>
-                            <td>
-                                Status
-                            </td>
-                            <td>
-                                <input name="check" type="checkbox" value="">
                             </td>
                         </tr>
                         <tr>
                             <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
                                 John Doe
                             </td>
+                        </tr>
+                        <tr>
                             <td>
-                                Position
+                                Contract
                             </td>
                             <td>
-                                Email
+                                01/01/17
                             </td>
                             <td>
-                                Status
+                                01/01/18
                             </td>
                             <td>
-                                <input name="check" type="checkbox" value="">
+                                Company
+                            </td>
+                            <td>
+                                John Doe
                             </td>
                         </tr>
-
-
-
-
+                        <tr>
+                            <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
+                                John Doe
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
+                                John Doe
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Contract
+                            </td>
+                            <td>
+                                01/01/17
+                            </td>
+                            <td>
+                                01/01/18
+                            </td>
+                            <td>
+                                Company
+                            </td>
+                            <td>
+                                John Doe
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -554,52 +618,307 @@
         </div>
     </div>
 </div>
-<div class="container-fluid content-main-section">
+<div class="container-fluid content-main-section contracts-bottom">
     <div class="row">
-        <div class="col-sm-12">
-            <div class="members-bottom section-background">
+        <div class="col-sm-4">
+            <div class="section-background calendar-wrapper">
                 <div class="table-header">
-                    <h4 class="black-1">Members</h4>
-                    <div class="main-table-controls">
-                        <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <h4 class="black-1">October 2016</h4>
+                    <div class="calendar-controls">
+                        <a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="add-new-member">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="member-name" class="col-sm-3 control-label">Name</label>
-                            <div class="col-sm-8 ">
-                                <input type="text" class="form-control" id="member-name" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="member-email" class="col-sm-3 control-label">Email</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="member-email" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="member-position" class="col-sm-3 control-label">Position</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="member-position" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="member-user-rights" class="col-sm-3 control-label">User Rights</label>
-                            <div class="col-sm-8">
-                                <textarea name="member-user-rights" id="member-user-rights" cols="30" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add-new-member" class="col-sm-3 control-label"></label>
-                            <div class="col-sm-8">
-                                <button type="submit" class="btn form-submit-btn" id="add-new-member">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="calendar-body table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="calendar-day">
+                                Sun
+                            </th>
+                            <th class="calendar-day">
+                               Mon
+                            </th>
+                            <th class="calendar-day">
+                                Tue
+                            </th>
+                            <th class="calendar-day">
+                                 Wed
+                            </th>
+                            <th class="calendar-day">
+                                Thu
+                            </th>
+                            <th class="calendar-day">
+                                Fri
+                            </th>
+                            <th class="calendar-day">
+                                Sat
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="old-date text-center">
+                                25
+                            </td>
+                            <td class="old-date text-center">
+                                26
+                            </td>
+                            <td class="old-date text-center">
+                                27
+                            </td>
+                            <td class="old-date text-center">
+                                28
+                            </td>
+                            <td class="old-date text-center">
+                                29
+                            </td>
+                            <td class="old-date text-center">
+                                30
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">1</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" class="date text-center">2</a>
+
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">3</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">4</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">5</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">6</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">7</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">8</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" class="date text-center">9</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">10</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">11</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">12</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">13</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">14</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">15</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" class="date text-center">16</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">17</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">18</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">19</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">20</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">21</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">22</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" class="date text-center">23</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">24</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">25</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">26</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">27</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">28</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">29</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" class="date text-center">30</a>
+                            </td>
+                            <td>
+                                <a href="" class="date text-center">31</a>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="alerts-window">
+                <div class="alerts-header">
+                    <h2>Alerts</h2>
+                    <p>4 October, 2016</p>
+                </div>
+
+                <ul class="list-unstyled alerts-list">
+
+
+                    <li>
+                        <div class="alert-list-left">
+                            <div class="alert-time  contracts-alert">
+                                <p>10:31 AM</p>
+                            </div>
+                            <p>
+                                <span class="alert-title">Alert 1</span>
+
+                            </p>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <div class="alert-list-left">
+                            <div class="alert-time  contracts-alert">
+                                <p>10:31 AM</p>
+                            </div>
+                            <p>
+                                <span class="alert-title">Alert 1</span>
+
+                            </p>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <div class="alert-list-left">
+                            <div class="alert-time  contracts-alert">
+                                <p>10:31 AM</p>
+                            </div>
+                            <p>
+                                <span class="alert-title">Alert 1</span>
+
+                            </p>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <button type="button" class="btn add-alert-btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="alerts-window">
+                <div class="alerts-header contracts-alert-header">
+                    <h2>Alerts</h2>
+                   <div class="alerts-select">
+                       <div class="alerts-dates">
+                           <select name="" id="start-date">
+                               <option value="">Start Date</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                           </select>
+                           <select name="" id="end-date">
+                               <option value="">End Date</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                           </select>
+                       </div>
+                       <select name="" id="company">
+                           <option value="">Company</option>
+                           <option value="">Option</option>
+                           <option value="">Option</option>
+                           <option value="">Option</option>
+                       </select>
+                   </div>
+                </div>
+
+                <ul class="list-unstyled alerts-list contracts-alert-list">
+                    <li>
+                        <div class="alert-list-left">
+                            <div class="alert-time  contracts-alert">
+                                <p>10:31 AM</p>
+                            </div>
+                            <p>
+                                <span class="alert-title">Alert 1</span>
+
+                            </p>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <div class="alert-list-left">
+                            <div class="alert-time  contracts-alert">
+                                <p>10:31 AM</p>
+                            </div>
+                            <p>
+                                <span class="alert-title">Alert 1</span>
+
+                            </p>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <div class="alert-list-left">
+                            <div class="alert-time  contracts-alert">
+                                <p>10:31 AM</p>
+                            </div>
+                            <p>
+                                <span class="alert-title">Alert 1</span>
+
+                            </p>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <button type="button" class="btn add-alert-btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
             </div>
         </div>
     </div>
@@ -684,7 +1003,7 @@
                         <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseTen" class="panel-collapse collapse  collapse-menu ">
+                <div id="collapseTen" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
                         <li class="payroll-link"><a href="index.html">Payroll</a></li>
                         <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
@@ -698,7 +1017,7 @@
             <div class="left-menu-item">
                 <a href="contracts.html">
                     <div class="menu-link contracts-link">
-                        <div class="menu-link-item">
+                        <div class="menu-link-item menu-active-link contracts">
                             <i class="fa fa-server" aria-hidden="true"></i>Contracts
                         </div>
                     </div>
@@ -714,7 +1033,7 @@
                     </div>
                 </a>
                 <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
+                    <ul class="list-unstyled submenu-links ">
                         <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
                         <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
                         <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
@@ -737,13 +1056,13 @@
                         <div class="menu-link-item ">
                             <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
                         </div>
-                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                     </div>
                 </a>
-                <div id="collapseEight" class="panel-collapse collapse in collapse-menu ">
+                <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
                     <ul class="list-unstyled submenu-links">
                         <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                        <li class="meetings-link menu-active-link meetings"><a href="meetings-members.html">Members</a></li>
+                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
                     </ul>
                 </div>
             </div>

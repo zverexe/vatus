@@ -378,10 +378,11 @@
           justify-content: center;
   width: 100%; }
 
-.footer-fixed {
-  position: fixed;
-  bottom: 0px; }
-
+/*.footer-fixed{
+  //position:fixed;
+  position: absolute;
+  bottom:0px;
+}*/
 /*
 * Payroll css
  */
@@ -976,6 +977,20 @@ html, body, .mm-page {
 body {
   position: relative;
   background-color: #eeeeee; }
+
+.page-wrapper {
+  min-height: -webkit-calc(100% - 80px);
+  /* Chrome */
+  /* Firefox */
+  min-height: calc(100% - 80px); }
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+  /* thank you Erik J - negate effect of float*/ }
 
 p {
   margin: 0; }

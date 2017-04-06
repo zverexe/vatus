@@ -20,6 +20,8 @@
           justify-content: center;
   width: 100%; }
 
-.footer-fixed {
-  position: fixed;
-  bottom: 0px; }
+/*.footer-fixed{
+  //position:fixed;
+  position: absolute;
+  bottom:0px;
+}*/

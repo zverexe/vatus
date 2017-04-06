@@ -18,8 +18,10 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  bottom: -20px; }
 
 .footer-fixed {
-  position: fixed;
-  bottom: 0; }
+  position: absolute;
+  bottom: -20px; }

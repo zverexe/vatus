@@ -75,13 +75,13 @@
     border-left: 1px solid #e0e0e0;
     margin-left: 70px; }
   .header .search-bar {
-    width: 324px;
-    padding-left: 111px;
+    width: 100%;
+    padding-left: 30px;
     padding-right: 30px; }
     .header .search-bar .search-input {
       position: relative; }
     .header .search-bar input {
-      width: 183px;
+      width: 100%;
       height: 33px;
       padding: 11px 20px;
       background-color: #f5f5f5;
@@ -93,7 +93,7 @@
     .header .search-bar .search-btn {
       position: absolute;
       top: 10px;
-      right: 20px; }
+      right: 10px; }
   .header .language, .header .username {
     width: 185px;
     font-family: 'Open Sans', sans-serif;
@@ -376,11 +376,13 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  bottom: -20px; }
 
 .footer-fixed {
-  position: fixed;
-  bottom: 0; }
+  position: absolute;
+  bottom: -20px; }
 
 /*
 * Payroll css
@@ -968,6 +970,10 @@
   margin-bottom: 26px; }
   .human-resources-bottom .alerts-window {
     width: 100%; }
+
+html, body, .mm-page {
+  position: relative;
+  height: 100%; }
 
 body {
   position: relative;
@@ -1794,7 +1800,7 @@ input {
     padding-left: 11px;
     padding-right: 10px; }
     .header .search-bar .search-btn {
-      right: 35px; }
+      right: 10px; }
   .header .language, .header .username {
     width: 155px; }
   .header .username {
@@ -1856,7 +1862,13 @@ input {
         -ms-flex-direction: column;
             flex-direction: column; }
     .human-resources-bottom .todo-items-footer input {
-      margin: 10px 0; } }
+      margin: 10px 0; }
+  .employee-details-form .table-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 @media screen and (max-width: 1330px) {
   .header {

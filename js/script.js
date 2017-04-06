@@ -1,7 +1,9 @@
 /*$("#header__button").click(function() {
  $(this).toggleClass("hamburger--open");
  });*/
-
+/*
+* Mobile mmenu
+ */
 var $menu = $("#mobile-menu").mmenu({
         /*navbars     : [
          {
@@ -56,13 +58,34 @@ $iconClose.on( "click", function() {
     API.close();
 });
 
+$(window).on("resize", function() {
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        API.close();
+    }
+});
+
+/*
+* end mobile mmenu
+ */
 
 
+/*
+* Open only one submenu
+ */
 
 $('[data-toggle="collapse"]').click(function() {
     $('.collapse.in').collapse('hide')
 });
 
+
+/*
+*
+ */
+
+
+/*
+* Change left menu chevrons on collapse submenu
+ */
 
 $('.collapse').on('show.bs.collapse', function(){
     var i = $(this).parent().find('.fa-chevron-down');
@@ -74,7 +97,11 @@ $('.collapse').on('show.bs.collapse', function(){
 });
 
 
-$('.left-menu-link').on('click', function () {
+/*$('.left-menu-link').on('click', function () {
     var a = $(this).parent().find('.menu-link');
     a.toggleClass('menu-link-opened');
-});
+});*/
+
+/*
+*
+ */

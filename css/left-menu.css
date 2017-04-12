@@ -33,7 +33,15 @@
               justify-content: space-between; }
     .left-menu .left-menu-item .menu-link-item {
       width: 100%;
-      position: relative; }
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .left-menu .left-menu-item .contracts {
       color: #f85567; }
     .left-menu .left-menu-item .inventory {
@@ -126,7 +134,15 @@
               justify-content: space-between; }
     #mobile-menu .left-menu-item .menu-link-item {
       width: 100%;
-      position: relative; }
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
     #mobile-menu .left-menu-item .contracts {
       color: #f85567; }
     #mobile-menu .left-menu-item .inventory {

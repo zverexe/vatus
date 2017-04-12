@@ -18,7 +18,8 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 20px; }
 
 /*.footer-fixed{
   //position:fixed;

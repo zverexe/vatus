@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -11,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" />
-
     <link rel="stylesheet" href="css/jquery.mmenu.all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -270,9 +267,9 @@
         <div class="col-sm-12">
             <ol class="breadcrumb">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="welcome-page.html">Home</a>
                 </li>
-                <li class="active">Document</li>
+                <li class="active"><a href="document-management.html">Document</a></li>
             </ol>
         </div>
     </div>
@@ -284,9 +281,18 @@
                 <div class="table-header">
                     <h4 class="black-1">Documents</h4>
                     <div class="main-table-controls">
-                        <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="dropdown">
+                            <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-table">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="main-table-filter">
@@ -324,226 +330,265 @@
                                 </div>
                             </th>
                             <th>
-                                Category
-                            </th>
-                            <th>
-                                Type
-                            </th>
+                                <div class="row-filter">
+                                    <p>Category</p>
+                                    <div class="sort">
+                                        <a href="">
+                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
-                            <th>
-                                Author
                             </th>
                             <th>
-                                Date
+                                <div class="row-filter">
+                                    <p>Type</p>
+                                    <div class="sort">
+                                        <a href="">
+                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="row-filter">
+                                    <p>Author</p>
+                                    <div class="sort">
+                                        <a href="">
+                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="row-filter">
+                                    <p> Date</p>
+                                    <div class="sort">
+                                        <a href="">
+                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Document
+                                <a href="">Document</a>
                             </td>
                             <td>
-                                Category
+                                <a href="">Category</a>
                             </td>
                             <td>
-                                Type
+                                <a href="">Type</a>
                             </td>
                             <td>
-                                Author
+                                <a href="">Author</a>
                             </td>
                             <td>
-                                Date
+                                <a href="">Date</a>
                             </td>
                         </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -582,13 +627,22 @@
 <div class="container-fluid content-main-section">
     <div class="row">
         <div class="col-sm-12">
-            <div class="document-management-footer">
+            <div class="section-background">
                 <div class="table-header">
                     <h4 class="black-1">New Document</h4>
                     <div class="main-table-controls">
-                        <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="dropdown">
+                            <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-table">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <form class="create-new-document">
@@ -670,8 +724,7 @@
                         </div>
                     </div>
                     <div class="document-control-bottom">
-                                <textarea name="new-document" id="new-document" cols="30" rows="10">
-                                </textarea>
+                       <textarea name="new-document" id="new-document" cols="30" rows="10"></textarea>
                     </div>
                     <button type="submit" class="btn form-submit-btn">Submit</button>
                 </form>
@@ -823,7 +876,7 @@
                 </div>
             </div>
             <div class="left-menu-item">
-                <a href="">
+                <a href="my-company.html">
                     <div class="menu-link ">
                         <div class="menu-link-item">
                             <i class="fa fa-user" aria-hidden="true"></i>Profile
@@ -832,7 +885,7 @@
                 </a>
             </div>
             <div class="left-menu-item">
-                <a href="">
+                <a href="sign-in.html">
                     <div class="menu-link">
                         <div class="menu-link-item">
                             <i class="fa fa-lock" aria-hidden="true"></i>Login

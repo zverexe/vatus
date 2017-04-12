@@ -33,11 +33,9 @@
   .my-company-users .table-header {
     border-bottom: 1px solid #eeeeee; }
 
-.company-bottom {
-  margin-bottom: 20px; }
-
 .company-bottom-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 20px; }

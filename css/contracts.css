@@ -2,11 +2,10 @@
   height: 18px;
   background-color: #f85567; }
 
-.contracts-bottom {
-  margin-bottom: 26px; }
-  .contracts-bottom .calendar-wrapper {
-    padding-bottom: 0; }
-  .contracts-bottom .alerts-window {
-    width: 100%; }
-    .contracts-bottom .alerts-window .add-alert-btn {
-      margin-top: 8px; }
+.contracts-bottom .calendar-wrapper {
+  padding-bottom: 0; }
+
+.contracts-bottom .alerts-window {
+  padding: 24px; }
+  .contracts-bottom .alerts-window .add-alert-btn {
+    margin-top: 8px; }

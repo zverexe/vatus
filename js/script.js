@@ -2,7 +2,7 @@
  $(this).toggleClass("hamburger--open");
  });*/
 /*
-* Mobile mmenu
+ * Mobile mmenu
  */
 var $menu = $("#mobile-menu").mmenu({
         /*navbars     : [
@@ -65,12 +65,12 @@ $(window).on("resize", function() {
 });
 
 /*
-* end mobile mmenu
+ * end mobile mmenu
  */
 
 
 /*
-* Open only one submenu
+ * Open only one submenu
  */
 
 $('[data-toggle="collapse"]').click(function() {
@@ -79,12 +79,12 @@ $('[data-toggle="collapse"]').click(function() {
 
 
 /*
-*
+ *
  */
 
 
 /*
-* Change left menu chevrons on collapse submenu
+ * Change left menu chevrons on collapse submenu
  */
 
 $('.collapse').on('show.bs.collapse', function(){
@@ -98,10 +98,56 @@ $('.collapse').on('show.bs.collapse', function(){
 
 
 /*$('.left-menu-link').on('click', function () {
-    var a = $(this).parent().find('.menu-link');
-    a.toggleClass('menu-link-opened');
-});*/
+ var a = $(this).parent().find('.menu-link');
+ a.toggleClass('menu-link-opened');
+ });*/
 
 /*
-*
+ *
  */
+
+$("#check-all").on('click', function(){
+    if ($(this).hasClass('allChecked')) {
+        $('input[type="checkbox"]', '.todo-list').prop('checked', false);
+    } else {
+        $('input[type="checkbox"]', '.todo-list').prop('checked', true);
+    }
+    $(this).toggleClass('allChecked');
+ });
+
+$("#check-all-2").on('click', function(){
+    if ($(this).hasClass('allChecked')) {
+        $('input[type="checkbox"]', '.todo-list-3').prop('checked', false);
+    } else {
+        $('input[type="checkbox"]', '.todo-list-3').prop('checked', true);
+    }
+    $(this).toggleClass('allChecked');
+});
+
+
+$("#check-all-1").on('click', function(){
+    if ($(this).hasClass('allChecked')) {
+        $('input[type="checkbox"]', '.todo-list').prop('checked', false);
+    } else {
+        $('input[type="checkbox"]', '.todo-list-2').prop('checked', true);
+    }
+    $(this).toggleClass('allChecked');
+});
+
+$('#add-note').click(function() {
+    $('.add-note').toggle('slow', function() {
+        // Animation complete.
+    });
+});
+
+$('#add-note-1').click(function() {
+    $('.add-note-1').toggle('slow', function() {
+        // Animation complete.
+    });
+});
+
+$('#add-note-2').click(function() {
+    $('.add-note-2').toggle('slow', function() {
+        // Animation complete.
+    });
+});

@@ -178,7 +178,7 @@
                                     </div>
                                 </div>
                                 <div class="left-menu-item">
-                                    <a href="">
+                                    <a href="my-company.html">
                                         <div class="menu-link ">
                                             <div class="menu-link-item">
                                                 <i class="fa fa-user" aria-hidden="true"></i>Profile
@@ -187,7 +187,7 @@
                                     </a>
                                 </div>
                                 <div class="left-menu-item">
-                                    <a href="">
+                                    <a href="sign-in.html">
                                         <div class="menu-link">
                                             <div class="menu-link-item">
                                                 <i class="fa fa-lock" aria-hidden="true"></i>Login
@@ -268,10 +268,10 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="welcome-page.html">Home</a>
                     </li>
-                    <li><a href="#">Human Resources</a></li>
-                    <li class="active"><a href="#">Employee Details</a></li>
+                    <li><a href="human-resources.html">Human Resources</a></li>
+                    <li class="active"><a href="human-resources-employee-details.html">Employee Details</a></li>
                 </ol>
             </div>
         </div>
@@ -282,9 +282,18 @@
                 <div class="info-block-wrapper section-background">
                     <div class="table-header">
                         <div class="main-table-controls">
-                            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                             <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown">
+                                <div class=" dropdown-toggle" id="dropdown-table" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-table">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="info-block-main">
@@ -325,7 +334,8 @@
                             <li class="active"><a href="#bio" data-toggle="tab">Bio</a></li>
                             <li><a href="#notes" data-toggle="tab">Notes</a></li>
                             <li><a href="#files" data-toggle="tab">Files</a></li>
-                            <li><a href="#miscellaneous" data-toggle="tab">Miscellaneous</a></li>
+                            <li class="miscellaneous-mobile hidden-lg hidden-md hidden-sm"><a href="#miscellaneous" data-toggle="tab">Miscella-<br>neous</a></li>
+                            <li class="miscellaneous-desktop"><a href="#miscellaneous" data-toggle="tab">Miscellaneous</a></li>
                         </ul>
                     </div>
                     <div class="tab-main-content">
@@ -391,13 +401,22 @@
                     <div class="table-header">
                         <h4 class="black-1">Documents</h4>
                         <div class="main-table-controls">
-                            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                             <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown">
+                                <div class=" dropdown-toggle" id="dropdown-table-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-table-1">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <ul class="list-unstyled todo-list">
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -406,12 +425,30 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-3">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -420,12 +457,30 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-4">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -434,12 +489,30 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-5">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -448,12 +521,30 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-6">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -462,12 +553,30 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-7">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -476,12 +585,30 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-9">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="todo-list-item">
                             <div class="todo-item-left">
                                 <input name="check" type="checkbox" value="">
                                 <p>
@@ -490,14 +617,32 @@
                                 </p>
                             </div>
                             <div class="todo-item-controls">
-                                <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" id="dropdown-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-10">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                                 <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <div class="dropdown">
+                                    <div class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="">Action</a></li>
+                                        <li><a href="">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                     </ul>
                     <div class="todo-items-footer">
-                        <button type="button" class="btn select-all-todo">Select All</button>
+                        <button type="button" class="btn select-all-todo" id="check-all">Select All</button>
                         <div class="todo-search">
                             <input type="text" placeholder="Search here...">
                         </div>
@@ -567,8 +712,14 @@
                             </div>
                             <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </li>
+                        <li class="add-note">
+                            <form action="" class="add-note-form">
+                                <input type="text" class="form-control" id="" placeholder="">
+                                <button type="submit" class="btn form-submit-btn" id="submit-new-note">Add Note</button>
+                            </form>
+                        </li>
                     </ul>
-                    <button type="button" class="btn add-alert-btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
+                    <button type="button" class="btn add-alert-btn" id="add-note"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
                 </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3 employee-details-form">
@@ -576,9 +727,18 @@
                     <div class="table-header">
                         <h4 class="black-1">Recored Absent</h4>
                         <div class="main-table-controls">
-                            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                             <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown">
+                                <div class=" dropdown-toggle" id="dropdown-table-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-table-2">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <form class="absent-form form-horizontal">
@@ -622,9 +782,18 @@
                     <div class="table-header">
                         <h4 class="black-1">Record Vacation</h4>
                         <div class="main-table-controls">
-                            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
-                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                             <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown">
+                                <div class=" dropdown-toggle" id="dropdown-table-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-table-3">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <form class="vacation-form form-horizontal">
@@ -812,7 +981,7 @@
                     </div>
                 </div>
                 <div class="left-menu-item">
-                    <a href="">
+                    <a href="my-company.html">
                         <div class="menu-link ">
                             <div class="menu-link-item">
                                 <i class="fa fa-user" aria-hidden="true"></i>Profile
@@ -821,7 +990,7 @@
                     </a>
                 </div>
                 <div class="left-menu-item">
-                    <a href="">
+                    <a href="sign-in.html">
                         <div class="menu-link">
                             <div class="menu-link-item">
                                 <i class="fa fa-lock" aria-hidden="true"></i>Login

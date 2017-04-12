@@ -31,7 +31,9 @@
   .human-resources-main .calendar-controls i:first-child {
     margin-right: 10px; }
 
-.human-resources-bottom {
-  margin-bottom: 26px; }
-  .human-resources-bottom .alerts-window {
-    width: 100%; }
+/*.human-resources-bottom{
+  margin-bottom: 26px;
+  .alerts-window{
+    width: 100%;
+  }
+}*/

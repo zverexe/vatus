@@ -106,6 +106,10 @@ $('.collapse').on('show.bs.collapse', function(){
  *
  */
 
+
+/*
+* check all checkboxes
+ */
 $("#check-all").on('click', function(){
     if ($(this).hasClass('allChecked')) {
         $('input[type="checkbox"]', '.todo-list').prop('checked', false);
@@ -133,6 +137,13 @@ $("#check-all-1").on('click', function(){
     }
     $(this).toggleClass('allChecked');
 });
+
+
+
+/*
+* add note
+ */
+
 
 $('#add-note').click(function() {
     $('.add-note').toggle('slow', function() {

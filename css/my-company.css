@@ -28,8 +28,7 @@
 
 .my-company-users {
   background-color: #fff;
-  width: 700px;
-  margin-right: 20px; }
+  width: 100%; }
   .my-company-users .table-header {
     border-bottom: 1px solid #eeeeee; }
 

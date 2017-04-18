@@ -2112,7 +2112,6 @@ input {
           -ms-flex-pack: justify;
               justify-content: space-between; }
     .header .banner-container {
-      margin-left: 70px;
       margin-right: 20px; }
   .content-main-section {
     margin-left: 0; }
@@ -2123,7 +2122,10 @@ input {
     display: none !important; }
   .header-sign-in .banner-sign-in img {
     width: 500px;
-    height: 91px; } }
+    height: 91px; }
+  .header__menu {
+    width: 100px;
+    margin-right: 10px; } }
 
 @media screen and (max-width: 767px) {
   body {
@@ -2132,9 +2134,8 @@ input {
     margin-left: 0;
     height: auto; }
     .header .banner-container {
-      margin-left: -15px;
-      margin-right: -15px;
-      border: 0; }
+      border: 0;
+      margin: 0; }
   .left-menu {
     width: 100%; }
   .payroll-main .table-responsive {
@@ -2228,7 +2229,12 @@ input {
   .tabs-left .miscellaneous-mobile {
     display: none; }
   .todo-item-controls .dropdown-menu {
-    left: -100px; } }
+    left: -100px; }
+  .header__menu {
+    margin-right: 30px; }
+  .mobile-logo img {
+    width: 150px;
+    margin: 15px 15px 0 15px; } }
 
 @media screen and (max-width: 550px) {
   .tabs-left .miscellaneous-desktop {

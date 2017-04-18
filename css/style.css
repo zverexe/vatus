@@ -1900,6 +1900,9 @@ input {
   .mobile-language .language-logo {
     margin-right: 5px; }
 
+.mobile-sm-banner, .mobile-xs-banner {
+  display: none; }
+
 /*
 * Screen sizes styles
  */
@@ -2201,6 +2204,12 @@ input {
     margin-bottom: 10px; }
   .document-control-bottom textarea {
     width: 100% !important; }
+  .payroll-section .main-table-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .payroll-alerts .alerts-window {
     height: 100%;
     margin-bottom: 26px; }
@@ -2230,13 +2239,22 @@ input {
     display: none; }
   .todo-item-controls .dropdown-menu {
     left: -100px; }
-  .header__menu {
-    margin-right: 30px; }
   .mobile-logo img {
     width: 150px;
-    margin: 15px 15px 0 15px; } }
+    margin: 15px 15px 0 15px; }
+  .mobile-sm-banner {
+    display: block; }
+  .sort {
+    margin-left: 8px; } }
 
 @media screen and (max-width: 550px) {
+  .header .banner-container {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .mobile-sm-banner {
+    display: none; }
+  .mobile-xs-banner {
+    display: block; }
   .tabs-left .miscellaneous-desktop {
     display: none; }
   .tabs-left .miscellaneous-mobile {
@@ -2349,7 +2367,5 @@ input {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .sort {
-    margin-left: 8px; }
   .human-resources-alerts .alerts-window .add-alert-btn {
     width: 100%; } }

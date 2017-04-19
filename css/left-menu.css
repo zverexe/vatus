@@ -92,22 +92,16 @@
         margin-bottom: 25px;
         position: relative; }
 
-.menu-active-link {
-  /*&:after {
-    left: -9px;
-    color: $primary-fff;
-  }*/ }
-  .menu-active-link:after, .menu-active-link:before {
-    content: "\f0d9";
-    font-family: fontAwesome;
-    width: 7px;
-    height: 60px;
-    font-size: 32px;
-    color: #eeeeee;
-    position: absolute;
-    top: -13px;
-    right: 4px;
-    /* Projects the arrow tot he direction that we want */ }
+.menu-active-link:after, .menu-active-link:before {
+  content: "\f0d9";
+  font-family: fontAwesome;
+  width: 7px;
+  height: 60px;
+  font-size: 32px;
+  color: #eeeeee;
+  position: absolute;
+  top: -13px;
+  right: 4px; }
 
 #mobile-menu {
   width: 100%;

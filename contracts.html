@@ -30,11 +30,11 @@
                                         <div class="user-logo">
                                             <img src="img/user-logo.png" alt="">
                                         </div>
-                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                             Mike Hussy
                                             <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                        <ul class="dropdown-menu">
                                             <li><a href="">Action</a></li>
                                             <li><a href="">Another action</a></li>
                                             <li><a href="#">Something else here</a></li>
@@ -199,11 +199,11 @@
                                         <div class="language-logo">
                                             <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
                                         </div>
-                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                             Language
                                             <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                                        <ul class="dropdown-menu">
                                             <li><a href="">Action</a></li>
                                             <li><a href="">Another action</a></li>
                                             <li><a href="#">Something else here</a></li>
@@ -231,11 +231,11 @@
                                 <div class="language-logo">
                                     <img src="img/language.png" alt="">
                                 </div>
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                     Language
                                     <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
+                                <ul class="dropdown-menu">
                                     <li><a href="">Action</a></li>
                                     <li><a href="">Another action</a></li>
                                     <li><a href="#">Something else here</a></li>
@@ -247,11 +247,11 @@
                                 <div class="user-logo">
                                     <img src="img/user-logo.png" alt="">
                                 </div>
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                     Mike Hussy
                                     <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                                <ul class="dropdown-menu">
                                     <li><a href="">Action</a></li>
                                     <li><a href="">Another action</a></li>
                                     <li><a href="#">Something else here</a></li>
@@ -292,10 +292,10 @@
                         <div class="main-table-controls">
                             <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                             <div class="dropdown">
-                                <div class=" dropdown-toggle" id="dropdown-table" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <div class=" dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                 </div>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown-table">
+                                <ul class="dropdown-menu">
                                     <li><a href="">Action</a></li>
                                     <li><a href="">Another action</a></li>
                                     <li><a href="#">Something else here</a></li>
@@ -307,17 +307,16 @@
                     <div class="main-table-filter">
                         <div class="table-filter-left">
                             <p>Show</p>
-                            <select name="" id="" class="main-table-select">
+                            <select name="filter" id="filter" class="main-table-select">
                                 <option value="10">10</option>
                                 <option value="20">20</option>
                                 <option value="30">30</option>
-                                <option value=""></option>
                             </select>
                             <p>Entries</p>
                         </div>
                         <div class="main-table-seacrh">
                             <div class="search-input">
-                                <input type="text"placeholder="Search">
+                                <input type="text" placeholder="Search">
                                 <span class="glyphicon glyphicon-search search-logo"></span>
                             </div>
                         </div>
@@ -862,7 +861,7 @@
                             <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </li>
                         <li class="add-note add-note-1">
-                            <form action="" class="add-note-form">
+                            <form action="some-action" class="add-note-form">
                                 <input type="text" class="form-control" placeholder="">
                                 <button type="submit" class="btn form-submit-btn" id="submit-new-note">Add Note</button>
                             </form>
@@ -877,20 +876,20 @@
                         <h2>Alerts</h2>
                         <div class="alerts-select">
                             <div class="alerts-dates">
-                                <select name="" id="start-date">
+                                <select name="start-date" id="start-date">
                                     <option value="">Start Date</option>
                                     <option value="">Option</option>
                                     <option value="">Option</option>
                                     <option value="">Option</option>
                                 </select>
-                                <select name="" id="end-date">
+                                <select name="end-date" id="end-date">
                                     <option value="">End Date</option>
                                     <option value="">Option</option>
                                     <option value="">Option</option>
                                     <option value="">Option</option>
                                 </select>
                             </div>
-                            <select name="" id="company">
+                            <select name="company" id="company">
                                 <option value="">Company</option>
                                 <option value="">Option</option>
                                 <option value="">Option</option>
@@ -936,7 +935,7 @@
                             <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </li>
                         <li class="add-note add-note-2">
-                            <form action="" class="add-note-form">
+                            <form action="some-action" class="add-note-form">
                                 <input type="text" class="form-control" placeholder="">
                                 <button type="submit" class="btn form-submit-btn" id="submit-new-note-2">Add Note</button>
                             </form>
@@ -1113,11 +1112,11 @@
                         <div class="language-logo">
                             <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
                         </div>
-                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                             Language
                             <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown">
+                        <ul class="dropdown-menu">
                             <li><a href="">Action</a></li>
                             <li><a href="">Another action</a></li>
                             <li><a href="#">Something else here</a></li>

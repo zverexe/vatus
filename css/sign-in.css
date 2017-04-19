@@ -1,7 +1,10 @@
+/*
+* Variables
+ */
 .header-sign-in {
   margin-left: 0px; }
-  .header-sign-in .logo img {
-    margin-top: 10px; }
+  .header-sign-in .logo {
+    margin-right: 20px; }
   .header-sign-in .banner-sign-in {
     margin-left: 10%; }
 

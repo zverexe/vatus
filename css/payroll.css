@@ -1,6 +1,9 @@
 /*
 * Payroll css
  */
+/*
+* Variables
+ */
 .payroll-page-stripe {
   height: 18px;
   background-color: #f9a159; }

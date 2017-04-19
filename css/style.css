@@ -1,3 +1,9 @@
+/*
+* General css styles & media query styles
+ */
+/*
+* Variables
+ */
 @font-face {
   font-family: "MyriadProRegular";
   src: url("../fonts/MyriadProRegular.ttf") format("truetype");
@@ -43,6 +49,9 @@
   font-family: "GothicCentury";
   src: url("../fonts/GothicCentury.ttf") format("truetype"); }
 
+/*
+* Variables
+ */
 /*
 * Header css
  */
@@ -131,6 +140,9 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     border: 0 !important; }
+    .header .username .dropdown-menu {
+      left: inherit;
+      right: 0; }
 
 .header-menu-item {
   height: 18px;
@@ -182,6 +194,9 @@
 
 /*
 * Left menu css
+ */
+/*
+* Variables
  */
 .left-menu {
   position: fixed;
@@ -373,6 +388,9 @@
         position: relative; }
 
 /*
+* Variables
+ */
+/*
 * Footer css
  */
 .footer {
@@ -402,6 +420,9 @@
 }*/
 /*
 * Payroll css
+ */
+/*
+* Variables
  */
 .payroll-page-stripe {
   height: 18px;
@@ -503,10 +524,13 @@
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+/*
+* Variables
+ */
 .header-sign-in {
   margin-left: 0px; }
-  .header-sign-in .logo img {
-    margin-top: 10px; }
+  .header-sign-in .logo {
+    margin-right: 20px; }
   .header-sign-in .banner-sign-in {
     margin-left: 10%; }
 
@@ -576,6 +600,9 @@
     font-weight: 400;
     color: #b4b4b4; }
 
+/*
+* Variables
+ */
 .header-welcome {
   margin-left: 0; }
 
@@ -707,6 +734,9 @@
   
 }*/
 /*
+* Variables
+ */
+/*
 * Meeting page css
  */
 .meetings-page-stripe {
@@ -759,10 +789,16 @@
 .members-bottom .form-horizontal {
   width: 70%; }
 
+/*
+* Variables
+ */
 .suppliers-page-stripe {
   height: 18px;
   background-color: #339ac8; }
 
+/*
+* Variables
+ */
 /*
 * Inventory page and subpages css
  */
@@ -782,6 +818,9 @@
 .inventory-purchase-orders .todo-new-item form {
   width: 100%; }
 
+/*
+* Variables
+ */
 .clients-page-stripe {
   background-color: #97cf4a;
   height: 18px; }
@@ -789,6 +828,9 @@
 .clients-main .main-table-select {
   margin: 0 10px; }
 
+/*
+* Variables
+ */
 .document-page-stripe {
   background-color: #32b092;
   height: 18px; }
@@ -888,6 +930,9 @@
     height: 190px; }
 
 /*
+* Variables
+ */
+/*
 * My company page css
  */
 .my-company-page-stripe {
@@ -928,6 +973,9 @@
   display: flex;
   margin-bottom: 20px; }
 
+/*
+* Variables
+ */
 .contracts-page-stripe {
   height: 18px;
   background-color: #f85567; }
@@ -940,6 +988,9 @@
   .contracts-bottom .alerts-window .add-alert-btn {
     margin-top: 8px; }
 
+/*
+* Variables
+ */
 .human-resources-page-stripe {
   background-color: #face1e;
   height: 18px; }
@@ -1915,8 +1966,6 @@ input {
       right: 10px; }
   .header .language, .header .username {
     width: 155px; }
-  .header .username {
-    width: 170px; }
   .header .banner-container {
     margin-left: 30px; }
   .header .banner {
@@ -2012,7 +2061,7 @@ input {
   .main-table-footer .pagination {
     margin-top: 0; }
   .header-sign-in .banner-sign-in {
-    margin-left: 4%; }
+    margin-left: 1%; }
   .website-menu-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2101,11 +2150,6 @@ input {
   .meetings-bottom .main-table-select {
     padding: 0 2px; } }
 
-/*@media  screen and (min-width: 992px){
-  #mobile-menu{
-    display: none !important;
-  }
-}*/
 @media screen and (max-width: 991px) {
   .header {
     margin-left: 0; }
@@ -2114,8 +2158,6 @@ input {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-    .header .banner-container {
-      margin-right: 20px; }
   .content-main-section {
     margin-left: 0; }
   .footer-clients {
@@ -2124,7 +2166,7 @@ input {
   #left-menu {
     display: none !important; }
   .header-sign-in .banner-sign-in img {
-    width: 500px;
+    width: 100%;
     height: 91px; }
   .header__menu {
     width: 100px;

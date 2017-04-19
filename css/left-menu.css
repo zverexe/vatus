@@ -1,6 +1,9 @@
 /*
 * Left menu css
  */
+/*
+* Variables
+ */
 .left-menu {
   position: fixed;
   top: 0;

@@ -1,4 +1,7 @@
 /*
+* Variables
+ */
+/*
 * Header css
  */
 .header {
@@ -86,6 +89,9 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     border: 0 !important; }
+    .header .username .dropdown-menu {
+      left: inherit;
+      right: 0; }
 
 .header-menu-item {
   height: 18px;

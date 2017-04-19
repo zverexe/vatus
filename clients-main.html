@@ -16,781 +16,806 @@
 </head>
 <body>
 <div class="page-wrapper">
-<div class="container-fluid header">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="header-wrapper">
-                <div class="hidden-md hidden-lg header__menu">
-                    <a id="header__button" class="hamburger" href="#">
-                        <div class="hamburger__inner"></div>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="header-wrapper">
+                    <div class="hidden-md hidden-lg header__menu">
+                        <a id="header__button" class="hamburger" href="#">
+                            <div class="hamburger__inner"></div>
+                        </a>
+                        <div id="mobile-menu">
+                            <div class="mobile-left-menu-wrapper"  id="accordion">
+                                <div class="mobile-username">
+                                    <div class="dropdown">
+                                        <div class="user-logo">
+                                            <img src="img/user-logo.png" alt="">
+                                        </div>
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Mike Hussy
+                                            <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a class=""  href="my-company.html">
+                                        <div class="menu-link  my-company-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo-m">
+                                        <div class="menu-link clients-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-th-large" aria-hidden="true"></i>Clients
+                                            </div>
+                                            <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+                                        </div>
+                                    </a>
+                                    <div id="collapseTwo-m" class="panel-collapse collapse in collapse-menu ">
+                                        <ul class="list-unstyled submenu-links">
+                                            <li class="clients-link menu-active-link"><a href="clients-main.html">Clients</a></li>
+                                            <li class="clients-link"><a href="client-details.html">Client Detalis</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree-m">
+                                        <div class="menu-link suppliers-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
+                                            </div>
+                                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        </div>
+                                    </a>
+                                    <div id="collapseThree-m" class="panel-collapse collapse collapse-menu ">
+                                        <ul class="list-unstyled submenu-links">
+                                            <li class="suppliers-link"><a href="suppliers.html">Suppliers</a></li>
+                                            <li class="suppliers-link"><a href="suppliers-detail.html">Supplier Details</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour-m">
+                                        <div class="menu-link human-resources-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
+                                            </div>
+                                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        </div>
+                                    </a>
+                                    <div id="collapseFour-m" class="panel-collapse collapse collapse-menu ">
+                                        <ul class="list-unstyled submenu-links">
+                                            <li class="human-resources-link"><a href="human-resources.html">Human Resources</a></li>
+                                            <li class="human-resources-link"><a href="human-resources-employee-details.html">Employee Details</a></li>
+                                            <li class="human-resources-link"><a href="human-resources-adsenteeism.html">Absenteeism</a></li>
+                                            <li class="human-resources-link"><a href="human-resorces-resumes.html">Resumes</a></li>
+                                            <li class="human-resources-link"><a href="human-resources-vacation.html">Vacation</a></li>
+                                            <li class="human-resources-link"><a href="human-resorces-documents.html">Documents</a></li>
+                                            <li class="human-resources-link"><a href="human-resorces-documents.html">Forms</a></li>
+                                            <li class="human-resources-link"><a href="human-resources-alerts.html">Alerts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen-m">
+                                        <div class="menu-link payroll-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-table" aria-hidden="true"></i>Payroll
+                                            </div>
+                                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        </div>
+                                    </a>
+                                    <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
+                                        <ul class="list-unstyled submenu-links">
+                                            <li class="payroll-link "><a href="index.html">Payroll</a></li>
+                                            <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
+                                            <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
+                                            <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
+                                            <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
+                                            <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a href="contracts.html">
+                                        <div class="menu-link contracts-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-server" aria-hidden="true"></i>Contracts
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="left-menu-item ">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix-m">
+                                        <div class="menu-link inventory-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
+                                            </div>
+                                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        </div>
+                                    </a>
+                                    <div id="collapseSix-m" class="panel-collapse collapse collapse-menu ">
+                                        <ul class="list-unstyled submenu-links ">
+                                            <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
+                                            <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
+                                            <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
+                                            <li class="inventory-link"><a href="inventory-invoices.html">Invoices</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a href="document-management.html">
+                                        <div class="menu-link document-management-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight-m">
+                                        <div class="menu-link meetings-link">
+                                            <div class="menu-link-item ">
+                                                <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
+                                            </div>
+                                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                                        </div>
+                                    </a>
+                                    <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
+                                        <ul class="list-unstyled submenu-links">
+                                            <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
+                                            <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a href="my-company.html">
+                                        <div class="menu-link ">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-user" aria-hidden="true"></i>Profile
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="left-menu-item">
+                                    <a href="">
+                                        <div class="menu-link">
+                                            <div class="menu-link-item">
+                                                <i class="fa fa-lock" aria-hidden="true"></i>Login
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mobile-language">
+                                    <div class="dropup">
+                                        <div class="language-logo">
+                                            <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                                        </div>
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Language
+                                            <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mobile-logo visible-xs visible-sm">
+                        <a href="welcome-page.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="banner-container visible-sm">
+                        <img src="img/header-image.png" class="banner" alt="">
+                    </div>
+                    <ul class="list-unstyled list-inline header-controls hidden-xs hidden-sm">
+                        <li class="banner-container"><img src="img/header-image.png" class="banner" alt=""></li>
+                        <li class="search-bar hidden-xs">
+                            <div class="search-input"><input type="text"   placeholder="Search" >
+                                <span class="glyphicon glyphicon-search search-btn"></span>
+                            </div>
+                        </li>
+                        <li class="language hidden-md">
+                            <div class="dropdown">
+                                <div class="language-logo">
+                                    <img src="img/language.png" alt="">
+                                </div>
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Language
+                                    <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="username">
+                            <div class="dropdown">
+                                <div class="user-logo">
+                                    <img src="img/user-logo.png" alt="">
+                                </div>
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Mike Hussy
+                                    <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="banner-container mobile-sm-banner">
+                        <img src="img/header-image.png" class="banner" alt="">
+                    </div>
+                </div>
+                <div class="banner-container mobile-xs-banner">
+                    <img src="img/header-image.png" class="banner img-responsive" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid clients-page-stripe">
+    </div>
+    <div class="container-fluid content-main-section">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="welcome-page.html">Home</a>
+                    </li>
+                    <li class="active"><a href="clients-main.html">Clients</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid content-main-section clients-main">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main-table-wrapper">
+                    <div class="table-header">
+                        <h4 class="black-1">Clients</h4>
+                        <div class="main-table-controls">
+                            <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown">
+                                <div class=" dropdown-toggle" id="dropdown-table" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-table">
+                                    <li><a href="">Action</a></li>
+                                    <li><a href="">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-table-filter">
+                        <div class="table-filter-left">
+                            <p>Show</p>
+                            <select name="table-items" id="table-items" class="main-table-select">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                            </select>
+                            <p>Entries</p>
+                        </div>
+                        <div class="main-table-seacrh">
+                            <div class="search-input">
+                                <input type="text" placeholder="Search">
+                                <span class="glyphicon glyphicon-search search-logo"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-table table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <div class="row-filter">
+                                        <p>Company</p>
+                                        <div class="sort">
+                                            <a href="">
+                                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="row-filter">
+                                        <p>Telephone</p>
+                                        <div class="sort">
+                                            <a href="">
+                                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="row-filter">
+                                        <p>Email Addrres</p>
+                                        <div class="sort">
+                                            <a href="">
+                                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="row-filter">
+                                        <p>Product/Service</p>
+                                        <div class="sort">
+                                            <a href="">
+                                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="row-filter">
+                                        <p>Contact</p>
+                                        <div class="sort">
+                                            <a href="">
+                                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Copany Name</a>
+                                </td>
+                                <td>
+                                    <a href="">623-4534</a>
+                                </td>
+                                <td>
+                                    <a href="">johndoe@company.com</a>
+                                </td>
+                                <td>
+                                    <a href="">Product</a>
+                                </td>
+                                <td>
+                                    <a href="">John Doe</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="main-table-footer">
+                        <nav class="main-table-pagination" aria-label="Page navigation">
+                            <p class="pagination-pages-number">Showing 1 to 10 of 57 entries</p>
+                            <ul class="pagination black-1">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">Previous</span>
+                                    </a>
+                                    <a href="#" aria-label="First">
+                                        <span aria-hidden="true">First</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">Next</span>
+                                    </a>
+                                    <a href="#" aria-label="Last">
+                                        <span aria-hidden="true">Last</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left-menu visible-md visible-lg">
+
+        <div class="brand">
+            <a href="welcome-page.html">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="left-menu-wrapper accordion" id="accordion1">
+            <div class="panel">
+                <div class="left-menu-item">
+                    <a class=""  href="my-company.html">
+                        <div class="menu-link  my-company-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
+                            </div>
+                        </div>
                     </a>
-                    <div id="mobile-menu">
-                        <div class="mobile-left-menu-wrapper"  id="accordion">
-                            <div class="mobile-username">
-                                <div class="dropdown">
-                                    <div class="user-logo">
-                                        <img src="img/user-logo.png" alt="">
-                                    </div>
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Mike Hussy
-                                        <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
-                                        <li><a href="">Action</a></li>
-                                        <li><a href="">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a class=""  href="my-company.html">
-                                    <div class="menu-link  my-company-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo-m">
-                                    <div class="menu-link clients-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-th-large" aria-hidden="true"></i>Clients
-                                        </div>
-                                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
-                                    </div>
-                                </a>
-                                <div id="collapseTwo-m" class="panel-collapse collapse in collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li class="clients-link menu-active-link"><a href="clients-main.html">Clients</a></li>
-                                        <li class="clients-link"><a href="client-details.html">Client Detalis</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree-m">
-                                    <div class="menu-link suppliers-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
-                                        </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                                    </div>
-                                </a>
-                                <div id="collapseThree-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li class="suppliers-link"><a href="suppliers.html">Suppliers</a></li>
-                                        <li class="suppliers-link"><a href="suppliers-detail.html">Supplier Details</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour-m">
-                                    <div class="menu-link human-resources-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
-                                        </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                                    </div>
-                                </a>
-                                <div id="collapseFour-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li class="human-resources-link"><a href="human-resources.html">Human Resources</a></li>
-                                        <li class="human-resources-link"><a href="human-resources-employee-details.html">Employee Details</a></li>
-                                        <li class="human-resources-link"><a href="human-resources-adsenteeism.html">Absenteeism</a></li>
-                                        <li class="human-resources-link"><a href="human-resorces-resumes.html">Resumes</a></li>
-                                        <li class="human-resources-link"><a href="human-resources-vacation.html">Vacation</a></li>
-                                        <li class="human-resources-link"><a href="human-resorces-documents.html">Documents</a></li>
-                                        <li class="human-resources-link"><a href="human-resorces-documents.html">Forms</a></li>
-                                        <li class="human-resources-link"><a href="human-resources-alerts.html">Alerts</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen-m">
-                                    <div class="menu-link payroll-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-table" aria-hidden="true"></i>Payroll
-                                        </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                                    </div>
-                                </a>
-                                <div id="collapseTen-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li class="payroll-link "><a href="index.html">Payroll</a></li>
-                                        <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
-                                        <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
-                                        <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
-                                        <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
-                                        <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a href="contracts.html">
-                                    <div class="menu-link contracts-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-server" aria-hidden="true"></i>Contracts
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="left-menu-item ">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix-m">
-                                    <div class="menu-link inventory-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
-                                        </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                                    </div>
-                                </a>
-                                <div id="collapseSix-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links ">
-                                        <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
-                                        <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
-                                        <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
-                                        <li class="inventory-link"><a href="inventory-invoices.html">Invoices</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a href="document-management.html">
-                                    <div class="menu-link document-management-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="left-menu-item">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight-m">
-                                    <div class="menu-link meetings-link">
-                                        <div class="menu-link-item ">
-                                            <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
-                                        </div>
-                                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                                    </div>
-                                </a>
-                                <div id="collapseEight-m" class="panel-collapse collapse collapse-menu ">
-                                    <ul class="list-unstyled submenu-links">
-                                        <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="left-menu-item">
-                                <a href="my-company.html">
-                                    <div class="menu-link ">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-user" aria-hidden="true"></i>Profile
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="left-menu-item">
-                                <a href="">
-                                    <div class="menu-link">
-                                        <div class="menu-link-item">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>Login
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="mobile-language">
-                                <div class="dropup">
-                                    <div class="language-logo">
-                                        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
-                                    </div>
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Language
-                                        <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
-                                        <li><a href="">Action</a></li>
-                                        <li><a href="">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
-                <div class="mobile-logo visible-sm visible-xs">
-                    <a href="welcome-page.html"><img src="img/logo.png" alt=""></a>
-                </div>
-                <ul class="list-unstyled list-inline header-controls hidden-xs hidden-sm">
-                    <li class="banner-container hidden-md"><img src="img/header-image.png" class="banner" alt=""></li>
-                    <li class="search-bar hidden-xs">
-                        <div class="search-input"><input type="text"   placeholder="Search" >
-                            <span class="glyphicon glyphicon-search search-btn"></span>
-                        </div>
-                    </li>
-                    <li class="language">
-                        <div class="dropdown">
-                            <div class="language-logo">
-                                <img src="img/language.png" alt="">
+                <div class="left-menu-item">
+                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                        <div class="menu-link clients-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-th-large" aria-hidden="true"></i>Clients
                             </div>
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Language
-                                <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown-categories">
-                                <li><a href="">Action</a></li>
-                                <li><a href="">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                            </ul>
+                            <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
                         </div>
-                    </li>
-                    <li class="username">
-                        <div class="dropdown">
-                            <div class="user-logo">
-                                <img src="img/user-logo.png" alt="">
-                            </div>
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Mike Hussy
-                                <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown3">
-                                <li><a href="">Action</a></li>
-                                <li><a href="">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid clients-page-stripe">
-</div>
-<div class="container-fluid content-main-section">
-    <div class="row">
-        <div class="col-sm-12">
-            <ol class="breadcrumb">
-                <li>
-                    <a href="welcome-page.html">Home</a>
-                </li>
-                <li class="active"><a href="clients-main.html">Clients</a></li>
-            </ol>
-        </div>
-    </div>
-</div>
-<div class="container-fluid content-main-section clients-main">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="main-table-wrapper">
-                <div class="table-header">
-                    <h4 class="black-1">Clients</h4>
-                    <div class="main-table-controls">
-                        <a href=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                        <div class="dropdown">
-                            <div class=" dropdown-toggle" id="dropdown-table" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                            </div>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown-table">
-                                <li><a href="">Action</a></li>
-                                <li><a href="">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="main-table-filter">
-                    <div class="table-filter-left">
-                        <p>Show</p>
-                        <select name="table-items" id="table-items" class="main-table-select">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                        </select>
-                        <p>Entries</p>
-                    </div>
-                    <div class="main-table-seacrh">
-                        <div class="search-input">
-                            <input type="text" placeholder="Search">
-                            <span class="glyphicon glyphicon-search search-logo"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-table table-responsive">
-                    <table class="table table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Company</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Telephone</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Email Addrres</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Product/Service</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="row-filter">
-                                    <p>Contact</p>
-                                    <div class="sort">
-                                        <a href="">
-                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="">Copany Name</a>
-                            </td>
-                            <td>
-                                <a href="">623-4534</a>
-                            </td>
-                            <td>
-                                <a href="">johndoe@company.com</a>
-                            </td>
-                            <td>
-                                <a href="">Product</a>
-                            </td>
-                            <td>
-                                <a href="">John Doe</a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="main-table-footer">
-                    <nav class="main-table-pagination" aria-label="Page navigation">
-                        <p class="pagination-pages-number">Showing 1 to 10 of 57 entries</p>
-                        <ul class="pagination black-1">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">Previous</span>
-                                </a>
-                                <a href="#" aria-label="First">
-                                    <span aria-hidden="true">First</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">Next</span>
-                                </a>
-                                <a href="#" aria-label="Last">
-                                    <span aria-hidden="true">Last</span>
-                                </a>
-                            </li>
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse in collapse-menu ">
+                        <ul class="list-unstyled submenu-links">
+                            <li class="clients-link  menu-active-link clients"><a href="clients-main.html">Clients</a></li>
+                            <li class="clients-link"><a href="client-details.html">Client Detalis</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                </div>
+                <div class="left-menu-item">
+                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                        <div class="menu-link suppliers-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
+                            </div>
+                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse collapse-menu ">
+                        <ul class="list-unstyled submenu-links">
+                            <li class="suppliers-link"><a href="suppliers.html">Suppliers</a></li>
+                            <li class="suppliers-link"><a href="suppliers-detail.html">Supplier Details</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-menu-item">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        <div class="menu-link human-resources-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
+                            </div>
+                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                    <div id="collapseFour" class="panel-collapse collapse collapse-menu ">
+                        <ul class="list-unstyled submenu-links">
+                            <li class="human-resources-link"><a href="human-resources.html">Human Resources</a></li>
+                            <li class="human-resources-link"><a href="human-resources-employee-details.html">Employee Details</a></li>
+                            <li class="human-resources-link"><a href="human-resources-adsenteeism.html">Absenteeism</a></li>
+                            <li class="human-resources-link"><a href="human-resorces-resumes.html">Resumes</a></li>
+                            <li class="human-resources-link"><a href="human-resources-vacation.html">Vacation</a></li>
+                            <li class="human-resources-link"><a href="human-resorces-documents.html">Documents</a></li>
+                            <li class="human-resources-link"><a href="human-resorces-documents.html">Forms</a></li>
+                            <li class="human-resources-link"><a href="human-resources-alerts.html">Alerts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-menu-item">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                        <div class="menu-link payroll-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-table" aria-hidden="true"></i>Payroll
+                            </div>
+                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                    <div id="collapseTen" class="panel-collapse collapse collapse-menu ">
+                        <ul class="list-unstyled submenu-links">
+                            <li class="payroll-link"><a href="index.html">Payroll</a></li>
+                            <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
+                            <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
+                            <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
+                            <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
+                            <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-menu-item">
+                    <a href="contracts.html">
+                        <div class="menu-link contracts-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-server" aria-hidden="true"></i>Contracts
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="left-menu-item ">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                        <div class="menu-link inventory-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
+                            </div>
+                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                    <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
+                        <ul class="list-unstyled submenu-links ">
+                            <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
+                            <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
+                            <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
+                            <li class="inventory-link"><a href="inventory-invoices.html">Invoices</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-menu-item">
+                    <a href="document-management.html">
+                        <div class="menu-link document-management-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="left-menu-item">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                        <div class="menu-link meetings-link">
+                            <div class="menu-link-item ">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
+                            </div>
+                            <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                    <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
+                        <ul class="list-unstyled submenu-links">
+                            <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
+                            <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-menu-item">
+                    <a href="my-company.html">
+                        <div class="menu-link ">
+                            <div class="menu-link-item">
+                                <i class="fa fa-user" aria-hidden="true"></i>Profile
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="left-menu-item">
+                    <a href="sign-in.html">
+                        <div class="menu-link">
+                            <div class="menu-link-item">
+                                <i class="fa fa-lock" aria-hidden="true"></i>Login
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mobile-language visible-md">
+                    <div class="dropup">
+                        <div class="language-logo">
+                            <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Language
+                            <span><i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown">
+                            <li><a href="">Action</a></li>
+                            <li><a href="">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="left-menu visible-md visible-lg">
-
-    <div class="brand">
-        <a href="welcome-page.html">
-            <img src="img/logo.png" alt="">
-        </a>
-    </div>
-    <div class="left-menu-wrapper accordion" id="accordion1">
-        <div class="panel">
-            <div class="left-menu-item">
-                <a class=""  href="my-company.html">
-                    <div class="menu-link  my-company-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-tachometer" aria-hidden="true"></i>My Company
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
-                    <div class="menu-link clients-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-th-large" aria-hidden="true"></i>Clients
-                        </div>
-                        <p class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
-                    </div>
-                </a>
-                <div id="collapseTwo" class="panel-collapse collapse in collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
-                        <li class="clients-link  menu-active-link clients"><a href="clients-main.html">Clients</a></li>
-                        <li class="clients-link"><a href="client-details.html">Client Detalis</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
-                    <div class="menu-link suppliers-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>Suppliers
-                        </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                    </div>
-                </a>
-                <div id="collapseThree" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
-                        <li class="suppliers-link"><a href="suppliers.html">Suppliers</a></li>
-                        <li class="suppliers-link"><a href="suppliers-detail.html">Supplier Details</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                    <div class="menu-link human-resources-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>Human Resources
-                        </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                    </div>
-                </a>
-                <div id="collapseFour" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
-                        <li class="human-resources-link"><a href="human-resources.html">Human Resources</a></li>
-                        <li class="human-resources-link"><a href="human-resources-employee-details.html">Employee Details</a></li>
-                        <li class="human-resources-link"><a href="human-resources-adsenteeism.html">Absenteeism</a></li>
-                        <li class="human-resources-link"><a href="human-resorces-resumes.html">Resumes</a></li>
-                        <li class="human-resources-link"><a href="human-resources-vacation.html">Vacation</a></li>
-                        <li class="human-resources-link"><a href="human-resorces-documents.html">Documents</a></li>
-                        <li class="human-resources-link"><a href="human-resorces-documents.html">Forms</a></li>
-                        <li class="human-resources-link"><a href="human-resources-alerts.html">Alerts</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
-                    <div class="menu-link payroll-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-table" aria-hidden="true"></i>Payroll
-                        </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                    </div>
-                </a>
-                <div id="collapseTen" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
-                        <li class="payroll-link"><a href="index.html">Payroll</a></li>
-                        <li class="payroll-link"><a href="payroll-adsenteeism.html">Absenteeism</a></li>
-                        <li class="payroll-link"><a href="payroll-vacation.html">Vacation</a></li>
-                        <li class="payroll-link"><a href="payroll-forms.html">Forms</a></li>
-                        <li class="payroll-link"><a href="payroll-conduct.html">Conduct</a></li>
-                        <li class="payroll-link"><a href="payroll-alerts.html">Alerts</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="left-menu-item">
-                <a href="contracts.html">
-                    <div class="menu-link contracts-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-server" aria-hidden="true"></i>Contracts
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="left-menu-item ">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                    <div class="menu-link inventory-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>Inventory
-                        </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                    </div>
-                </a>
-                <div id="collapseSix" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links ">
-                        <li class="inventory-link"><a href="inventory-main.html">Inventory</a></li>
-                        <li class="inventory-link"><a href="inventory-new-item.html">New Item</a></li>
-                        <li class="inventory-link"><a href="inventory-purchase-orders.html">Purchase Order</a></li>
-                        <li class="inventory-link"><a href="inventory-invoices.html">Invoices</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="left-menu-item">
-                <a href="document-management.html">
-                    <div class="menu-link document-management-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i>Document Management
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="left-menu-item">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
-                    <div class="menu-link meetings-link">
-                        <div class="menu-link-item ">
-                            <i class="fa fa-map-o" aria-hidden="true"></i>Meetings
-                        </div>
-                        <p class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-                    </div>
-                </a>
-                <div id="collapseEight" class="panel-collapse collapse collapse-menu ">
-                    <ul class="list-unstyled submenu-links">
-                        <li class="meetings-link"><a href="meetings-page.html">Meetings</a></li>
-                        <li class="meetings-link"><a href="meetings-members.html">Members</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="left-menu-item">
-                <a href="my-company.html">
-                    <div class="menu-link ">
-                        <div class="menu-link-item">
-                            <i class="fa fa-user" aria-hidden="true"></i>Profile
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="left-menu-item">
-                <a href="">
-                    <div class="menu-link">
-                        <div class="menu-link-item">
-                            <i class="fa fa-lock" aria-hidden="true"></i>Login
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 <div class="container-fluid footer footer-clients">
     <div class="row">

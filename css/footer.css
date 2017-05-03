@@ -21,8 +21,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  margin-top: 20px; }
+  width: 100%; }
 
 /*.footer-fixed{
   //position:fixed;

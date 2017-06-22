@@ -1,0 +1,43 @@
+/*
+* My company page css
+ */
+/*
+* Variables
+ */
+.my-company-page-stripe {
+  height: 18px;
+  background-color: #3bbdd4; }
+
+.my-company-info {
+  height: 400px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid #e4e4e4; }
+  .my-company-info .my-company-info-left {
+    width: 150px;
+    height: 100%;
+    background-color: #d0d0d0; }
+    .my-company-info .my-company-info-left .tabs-left {
+      background-color: #f4f4f4;
+      padding-top: 0; }
+
+.my-company-users {
+  background-color: #fff;
+  width: 100%; }
+  .my-company-users .table-header {
+    border-bottom: 1px solid #eeeeee; }
+
+.company-bottom-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }

@@ -1,0 +1,25 @@
+/*
+* Contracts page css
+ */
+@import "variables";
+
+.contracts-page-stripe{
+  height: 18px;
+  background-color: $red-1;
+}
+
+.contracts-bottom{
+  //margin-bottom: 26px;
+  .calendar-wrapper{
+    padding-bottom: 0;
+  }
+
+  .alerts-window{
+    //width: 100%;
+    padding:24px;
+    .add-alert-btn{
+      margin-top: 8px;
+    }
+  }
+
+}

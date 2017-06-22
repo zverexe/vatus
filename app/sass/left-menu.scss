@@ -1,0 +1,263 @@
+/*
+* Left menu css
+ */
+
+@import "variables";
+
+.left-menu{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+  width: 270px;
+  height: 100%;
+  background-color: $left-menu-bgc;
+  color: $gray-3;
+  font-size: 14px;
+  overflow-y: auto;
+  .collapse-menu{
+    background-color: $left-menu-open;
+  }
+  .brand{
+    padding: 17px 35px 14px 35px;
+    border-bottom: 1px solid $menu-border;
+  }
+  .left-menu-item{
+    border-bottom: 1px solid $menu-border;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    .menu-link {
+      padding: 20px 0 20px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-link-item{
+      width: 100% ;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .contracts{
+      color: $red-1;
+    }
+    .inventory{
+      color: $violet;
+    }
+    .document-management{
+      color: $green-2;
+    }
+
+    .meetings{
+      color: $orange-2;
+    }
+
+    .my-company{
+      color: $blu-2;
+    }
+
+    .clients{
+      color: $green;
+    }
+
+    .suppliers{
+      color: $blu-1;
+    }
+
+    .payroll{
+      color: $orange-1;
+    }
+
+    .human-resources{
+      color: $yellow-1;
+    }
+
+    .contracts-link:hover{
+      color: $red-1;
+    }
+    .inventory-link:hover{
+      color: $violet;
+    }
+    .document-management-link:hover{
+      color: $green-2;
+    }
+
+    .meetings-link:hover{
+      color: $orange-2;
+    }
+
+    .my-company-link:hover{
+      color: $blu-2;
+    }
+
+    .clients-link:hover{
+      color: $green;
+    }
+
+    .suppliers-link:hover{
+      color: $blu-1;
+    }
+
+    .payroll-link:hover{
+      color: $orange-1;
+    }
+
+    .human-resources-link:hover{
+      color: $yellow-1;
+    }
+
+
+    i{
+      margin-right: 17px;
+    }
+    .up{
+      margin-right: 0px;
+      margin-left: 20px;
+    }
+
+    .submenu-links{
+      padding: 20px 0 20px 60px;
+      li{
+        margin-bottom: 25px;
+        position: relative;
+      }
+    }
+  }
+}
+
+
+
+.menu-active-link{
+  &:after,
+  &:before {
+    content: "\f0d9";
+    font-family: fontAwesome;
+    width: 7px;
+    height: 60px;
+    font-size: 32px;
+    color: $gray-1;
+    position: absolute;
+    top: -13px;
+    right: 4px;
+  }
+}
+
+
+#mobile-menu{
+  width: 100%;
+  height: 100%;
+  background-color: $left-menu-bgc;
+  color: $gray-3;
+  font-size: 14px;
+  overflow-y: auto;
+
+  .collapse-menu{
+    background-color: $left-menu-open;
+  }
+
+  .brand{
+    padding: 17px 35px 14px 35px;
+    border-bottom: 1px solid $menu-border;
+  }
+  .left-menu-item{
+    border-bottom: 1px solid $menu-border;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    .menu-link {
+      padding: 20px 0 20px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-link-item{
+      width: 100% ;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .contracts{
+      color: $red-1;
+    }
+    .inventory{
+      color: $violet;
+    }
+    .document-management{
+      color: $green-2;
+    }
+
+    .meetings{
+      color: $orange-2;
+    }
+
+    .my-company{
+      color: $blu-2;
+    }
+
+    .clients{
+      color: $green;
+    }
+
+    .suppliers{
+      color: $blu-1;
+    }
+
+    .payroll{
+      color: $orange-1;
+    }
+
+    .human-resources{
+      color: $yellow-1;
+    }
+
+
+    .contracts:hover{
+      color: $red-1;
+    }
+    .inventory:hover{
+      color: $violet;
+    }
+    .document-management:hover{
+      color: $green-2;
+    }
+
+    .meetings:hover{
+      color: $orange-2;
+    }
+
+    .my-company:hover{
+      color: $blu-2;
+    }
+
+    .clients:hover{
+      color: $green;
+    }
+
+    .suppliers:hover{
+      color: $blu-1;
+    }
+
+    .payroll:hover{
+      color: $orange-1;
+    }
+
+    .human-resources:hover{
+      color: $yellow-1;
+    }
+
+
+    i{
+      margin-right: 17px;
+    }
+    .up{
+      margin-right: 0px;
+      margin-left: 20px;
+    }
+
+    .submenu-links{
+      padding: 20px 0 20px 60px;
+      li{
+        margin-bottom: 25px;
+        position: relative;
+      }
+    }
+  }
+}

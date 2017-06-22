@@ -1,0 +1,30 @@
+/*
+* Footer css
+ */
+/*
+* Variables
+ */
+.footer {
+  height: 80px;
+  background-color: #b4b4b4;
+  color: #fff;
+  font-family: "MyriadProSemiBold", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+
+/*.footer-fixed{
+  //position:fixed;
+  position: absolute;
+  bottom:0px;
+}*/

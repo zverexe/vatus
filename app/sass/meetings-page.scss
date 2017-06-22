@@ -1,0 +1,58 @@
+/*
+* Meeting page css
+ */
+
+@import "variables";
+
+.meetings-page-stripe{
+  height: 18px;
+  background-color: $orange-2;
+}
+
+.meetings-bottom, .members-bottom{
+  margin-bottom: 61px;
+
+  .form-horizontal{
+    padding: 0 28px 10px 28px;
+  }
+  .main-table-select{
+    margin: 0;
+  }
+  .form-group{
+    display: flex;
+    input{
+      height: 38px;
+      padding-left:10px;
+      border: 1px solid $gray-1;
+      background-color: $primary-fff;
+      border-radius: 4px;
+      color: $gray-10;
+    }
+    textarea{
+      width: 100%;
+      border: 1px solid $gray-1;
+      border-radius: 4px;
+    }
+    label{
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      color: $black-1;
+    }
+    select{
+      font-family: "MyriadProRegular", sans-serif;
+      font-size: 13px;
+      color: $gray-4;
+    }
+  }
+}
+
+.members-bottom{
+  .add-new-member{
+    display: flex;
+    justify-content: center;
+  }
+  .form-horizontal{
+    width: 70%;
+  }
+
+}

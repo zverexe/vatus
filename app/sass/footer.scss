@@ -1,0 +1,22 @@
+/*
+* Footer css
+ */
+
+@import "variables";
+
+.footer{
+  height: 80px;
+  background-color: $gray-2;
+  color: $primary-fff;
+  font-family: "MyriadProSemiBold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*.footer-fixed{
+  //position:fixed;
+  position: absolute;
+  bottom:0px;
+}*/

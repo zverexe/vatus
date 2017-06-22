@@ -1,0 +1,120 @@
+/*
+* Document management css
+ */
+
+@import "variables";
+
+.document-page-stripe{
+  background-color: $green-2;
+  height: 18px;
+}
+
+.document-management-main{
+  .main-table-select{
+    width: 124px;
+  }
+}
+
+.create-new-document{
+  padding: 25px 28px 28px 28px;
+  margin-bottom: 33px;
+  .document-control-top{
+    input, select{
+      width: 303px;
+      height: 50px;
+      border: 1px solid #eeeeee;
+      background-color:$primary-fff;
+      padding: 17px 0 17px 20px;
+      color: $gray-4;
+      border-radius: 4px;
+    }
+    input{
+      margin-right: 17px;
+    }
+  }
+  .document-control-middle{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    color: $black-1;
+    .font-select{
+      width: 121px;
+      height: 34px;
+      border: 1px solid $gray-1;
+      background-color:$primary-fff;
+      padding: 0px 11px 0 14px;
+      font-weight: 400;
+      border-radius: 4px;
+    }
+    .font-type{
+      position: relative;
+      margin: 0 9px;
+     input{
+       width: 61px;
+       height: 34px;
+       border: 1px solid $gray-1;
+       background-color:$primary-fff;
+       border-radius: 4px;
+       padding-left: 14px;
+     }
+      .sort{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 10px;
+        a{
+          margin-top: -2px;
+        }
+      }
+    }
+    .font-settings{
+      border: 1px solid $gray-1;
+      border-radius: 4px;
+      button{
+        background-color: $primary-fff;
+        border: 0;
+        padding: 0 15px;
+        height: 34px;
+      }
+      .font-settings__bold{
+        font-weight: 600;
+      }
+      .font-settings__italic{
+        font-style: italic;
+        font-weight: 600;
+        border-left: 1px solid $gray-1;
+        border-right: 1px solid $gray-1;
+      }
+      .font-settings__underline{
+        font-weight: 600;
+      }
+    }
+    .font-alignment{
+      @extend .font-settings;
+      margin: 0 8px;
+      .font-alignment__ol{
+        border-left: 1px solid $gray-1;
+        border-right: 1px solid $gray-1;
+      }
+    }
+  }
+  .add-link{
+    background-color: $primary-fff;
+    border: 0;
+    padding: 0 11px;
+    height: 34px;
+    border: 1px solid $gray-1;
+    border-radius: 4px;
+  }
+  .document-control-bottom{
+    textarea{
+      border: 1px solid $gray-1;
+      border-radius: 4px;
+      width: 80%;
+      height: 190px;
+    }
+  }
+}
+
+

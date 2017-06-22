@@ -1,0 +1,95 @@
+/*
+* Payroll css
+ */
+/*
+* Variables
+ */
+.payroll-page-stripe {
+  height: 18px;
+  background-color: #f9a159; }
+
+.payroll-section .table-filter-left span {
+  margin: 0 5px; }
+
+.payroll-section .main-table-select {
+  border: 0;
+  margin: 0;
+  color: #333333; }
+
+.payroll-calendar .calendar-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .payroll-calendar .calendar-controls h4 {
+    margin-right: 40px; }
+  .payroll-calendar .calendar-controls i:first-child {
+    margin-right: 10px; }
+
+.main-table {
+  padding: 0 28px;
+  margin-top: 30px; }
+
+.table-client-name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.main-table-footer .print {
+  color: #fff;
+  padding: 10px 5px;
+  background-color: #ababab;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.main-table-footer .payroll-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  width: inherit; }
+  .main-table-footer .payroll-pagination p {
+    margin-right: 39px;
+    color: #707070; }
+  .main-table-footer .payroll-pagination a {
+    color: #333333; }
+
+.payroll-forms .todo-items-footer .todo-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .payroll-forms .todo-items-footer .todo-search input {
+    margin-left: 10px;
+    width: 600px; }
+
+.payroll-alerts .alerts-window {
+  width: 100%;
+  height: 570px; }
+
+.payroll-conduct .main-table-filter {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }

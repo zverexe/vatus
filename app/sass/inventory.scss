@@ -1,0 +1,25 @@
+/*
+* Inventory page css
+ */
+
+@import "variables";
+
+.inventory-page-stripe{
+  background-color: $violet;
+  height: 18px;
+}
+
+.inventory-bottom{
+  margin-bottom: 20px;
+}
+
+.inventory-purchase-orders{
+  .todo-new-item{
+    form{
+      width: 100%;
+    }
+  }
+}
+
+
+

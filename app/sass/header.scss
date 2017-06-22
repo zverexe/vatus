@@ -1,0 +1,167 @@
+/*
+* Header css
+ */
+
+@import "variables";
+
+.header{
+  height: 91px;
+  background-color: $primary-fff;
+  margin-left: 270px;
+  .header-wrapper{
+    display: flex;
+    height: 91px;
+  }
+  .header-controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $black-1;
+    .search-bar, .language,{
+      border-right: 1px solid $gray-6;
+      padding-top: 28px;
+    }
+  }
+  .banner-container{
+    border-right: 1px solid $gray-6;
+    border-left: 1px solid $gray-6;
+    margin-left: 70px;
+  }
+  .search-bar{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    .search-input{
+      position: relative;
+    }
+    input{
+      width: 100%;
+      height: 33px;
+      padding: 11px 20px;
+      background-color: #f5f5f5;
+      border: none;
+      border-radius: 10px;
+      font-family: "Open Sans";
+      font-weight:400;
+    }
+    .search-btn{
+      position: absolute;
+      top:10px;
+      right: 10px;
+    }
+  }
+  .mobile-logo{
+    img{
+      //margin-top: 5px;
+    }
+  }
+  .language{
+    width: 185px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    .dropdown{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .language-logo{
+      border-radius: 100%;
+      background-color: #f5f5f5;
+      padding: 4px 9px 5px  9px;
+    }
+    .btn-default{
+      border-color: $primary-fff !important;
+      background-color: $primary-fff !important;
+      &:hover{
+        background-color: $primary-fff;
+      }
+      .open>.dropdown-toggle.btn-default{
+        background-color: $primary-fff;
+        color: $black-1;
+      }
+    }
+  }
+  .username{
+    width: 215px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    @extend .language;
+    border: 0 !important;
+    .dropdown-menu{
+      left: inherit;
+      right: 0;
+    }
+  }
+
+}
+.header-menu-item{
+  height: 18px;
+  background-color: $payroll-color;
+}
+
+
+$hamburger__height: 30px;
+$hamburger__width: 40px;
+$hamburger__layer__height: 6px;
+
+
+// Hamburger menu structure
+.hamburger {
+  display: block;
+  position: absolute;
+  width: $hamburger__height;
+  height: $hamburger__width;
+  z-index: 2;
+  top: 25px;
+}
+
+.hamburger__inner {
+  display: block;
+  width: $hamburger__width;
+  height: $hamburger__layer__height;
+  margin-top: $hamburger__layer__height * 2;
+  background: $gray-4;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  &::before, &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: $hamburger__width;
+    height: $hamburger__layer__height;
+    background: $gray-4;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    top: $hamburger__layer__height * 4;
+  }
+}
+
+// Clicked State
+.hamburger--open {
+  .hamburger__inner {
+    background: none;
+
+    &::before, &::after {
+      top: $hamburger__layer__height * 2;
+    }
+    &::before {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &::after {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}

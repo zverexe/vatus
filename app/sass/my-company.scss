@@ -1,0 +1,42 @@
+/*
+* My company page css
+ */
+
+@import "variables";
+
+.my-company-page-stripe{
+  height: 18px;
+  background-color: $blu-2;
+}
+
+.my-company-info{
+  height: 400px;
+  background-color: $primary-fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid $tabs-borders;
+  .my-company-info-left{
+    width: 150px;
+    height: 100%;
+    background-color: $gray-11;
+    .tabs-left{
+      background-color: $gray-15;
+      padding-top: 0;
+    }
+  }
+}
+
+.my-company-users{
+  background-color: $primary-fff;
+  width: 100%;
+  .table-header{
+    border-bottom: 1px solid $gray-1;
+  }
+}
+
+.company-bottom-wrapper{
+  display: flex;
+  margin-bottom: 20px;
+}
+

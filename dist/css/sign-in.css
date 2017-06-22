@@ -1,0 +1,78 @@
+/*
+* Sign in css
+ */
+/*
+* Variables
+ */
+.header-sign-in {
+  margin-left: 0px; }
+  .header-sign-in .logo {
+    margin-right: 20px; }
+  .header-sign-in .banner-sign-in {
+    margin-left: 10%; }
+
+.sign-in-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.login-panel-wrapper {
+  margin-top: 150px; }
+
+.panel-default {
+  border: 0; }
+
+.login-panel {
+  width: 400px;
+  font-family: "Open Sans", sans-serif; }
+  .login-panel form {
+    padding: 28px;
+    background-color: #fff; }
+  .login-panel .checkbox label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .login-panel .sign-in-btn {
+    width: 100%;
+    background-color: #ababab;
+    color: #fff;
+    padding: 10px 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+  .login-panel .form-group input {
+    border: 1px solid #e0e0e0 !important; }
+  .login-panel .sign-in-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #707070; }
+
+.create-account {
+  font-weight: 600;
+  color: #707070; }
+  .create-account span {
+    font-weight: 400;
+    color: #b4b4b4; }

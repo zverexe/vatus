@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -603,7 +602,7 @@
                             </li>
                         </ul>
                         <div class="todo-items-footer">
-                            <button type="button" class="btn select-all-todo" id="check-all">Select All</button>
+                            <button type="button" class="btn select-all-todo" onclick="selectAll(event)">Select All</button>
                             <div class="todo-search">
                                 <input type="text" placeholder="Search here...">
                             </div>
@@ -676,14 +675,14 @@
                             </div>
                             <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
                         </li>
-                        <li class="add-note">
+                        <li class="note">
                             <form action="some-action" class="add-note-form">
                                 <input type="text" class="form-control" placeholder="">
-                                <button type="submit" class="btn form-submit-btn" id="submit-new-note">Add Note</button>
+                                <button type="submit" class="btn form-submit-btn submit-new-note">Add Note</button>
                             </form>
                         </li>
                     </ul>
-                    <button type="button" class="btn add-alert-btn" id="add-note"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
+                    <button type="button" class="btn add-alert-btn add-note"><i class="fa fa-plus" aria-hidden="true"></i> Add Note Here</button>
                 </div>
             </div>
         </div>
